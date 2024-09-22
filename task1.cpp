@@ -125,7 +125,7 @@ void ScanInp(double* coef_a, double* coef_b, double* coef_c)
 
     while(scanf("%lg%lg%lg", coef_a, coef_b, coef_c) != 3 && (inp = getchar()) != -1)
     {
-        printf("Бро, ты ввёл фигню. Попробуй ещё раз\n");
+        printf("Bro, you introduced bullshit. Try again\n");
         while(inp != '\n')
         {
             inp = getchar();
@@ -138,20 +138,129 @@ void PrintRoots(double root_1, double root_2, RootsNumb roots_cnt)
     switch(roots_cnt)
     {
         case ZERO:
-            printf("Ваше уравнение не имеет корней");
+            printf("Your equation has no roots");
             break;
         case ONE:
-            printf("Ваше уравнение имееет единственный корень x = %lg", root_1);
+            printf("Your equation has a single root x = %lg", root_1);
             break;
         case TWO:
-            printf("Ваше уравнение имеет два корня x1 = %lg, x2 = %lg", root_1, root_2);
+            printf("Your equation has two roots x1 = %lg, x2 = %lg", root_1, root_2);
             break;
         case INF:
-            printf("Ваше уравнение имеет бесконечное кол-во корней");
+            printf("Your equation has an infinite number of roots");
             break;
         default:
             break;
     }
+}
+
+
+void PrintRootsIntoFile(double root_1, double root_2, RootsNumb roots_cnt, int expected_ammount_of_roots, double expected_root1,
+ double expected_root2, FILE* result_file)
+{
+
+    switch(roots_cnt)
+    {
+        case ZERO:
+            fprintf(result_file, "no roots - ");
+            if(expected_ammount_of_roots == 0)
+            {
+                fprintf(result_file, "correct\n");
+            }
+            else
+            {
+                fprintf(result_file, "not correct, equantion has no rules\n");
+            }
+            break;
+        case ONE:
+            fprintf(result_file, "x1 = %lg - ", root_1);
+            if(expected_ammount_of_roots == 1 && root_1 == expected_root1)
+            {
+                fprintf(result_file, "correct\n");
+            }
+            else
+            {
+                fprintf(result_file, "not correct, expected root = %lg\n", expected_root1);
+            }
+            break;
+        case TWO:
+            fprintf(result_file, "x1 = %lg x2 = %lg - " , root_1, root_2);
+            if(expected_ammount_of_roots == 2 && (root_1 == expected_root1 && root_2 == expected_root2)
+            || (root_1 == expected_root2 && root_2 == expected_root1))
+            {
+                fprintf(result_file, "correct\n");
+            }
+            else
+            {
+                fprintf(result_file, "not correct, expected first root = %lg expected first root = %lg\n", expected_root1, expected_root2);
+            }
+            break;
+        case INF:
+            fprintf(result_file, "every x - ");
+            if(expected_ammount_of_roots == 3)
+            {
+                fprintf(result_file, "correct\n");
+            }
+            else
+            {
+                fprintf(result_file, "not correct, every x is root\n");
+            }
+            break;
+        default:
+            break;
+    }
+}
+
+int ScanFile(double* coef_a, double* coef_b, double* coef_c, int* expected_ammount_of_roots, double* expected_root1, double* expected_root2,  FILE* file, FILE* result_file)
+{
+    int inp = 0;
+    if(fscanf(file, "%lg%lg%lg%d%lg%lg", coef_a, coef_b, coef_c, expected_ammount_of_roots, expected_root1, expected_root2) == 6)
+    {
+        fprintf(result_file, "%lg %lg %lg ", *coef_a, *coef_b, *coef_c);
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+void WorkWithFile()
+{
+
+    FILE* file = fopen("TestS.txt", "rb");
+    FILE* result_file = fopen("TestsResult.txt", "w");
+    int fd = _fileno(result_file);
+    _chsize(fd, 0);
+    if (file == NULL)
+    {
+        fprintf(result_file, "FileReadError");
+    }
+    //file = ("Test.txt", "rb");
+
+
+    double coef_a = NAN;
+    double coef_b = NAN;
+    double coef_c = NAN;
+    int expected_ammount_of_roots = NAN;
+    double expected_root1 = NAN;
+    double expected_root2 = NAN;
+
+
+    while(ScanFile(&coef_a, &coef_b, &coef_c, &expected_ammount_of_roots,&expected_root1, &expected_root2, file, result_file))
+    {
+        //ScanFile(&coef_a, &coef_b, &coef_c, &expected_ammount_of_roots,&expected_root1, &expected_root2, file, result_file);
+        //ScanInp(&coef_a, &coef_b, &coef_c);
+
+        double root_1 = 0;
+        double root_2 = 0;
+
+        RootsNumb roots_cnt = Find_roots(coef_a, coef_b, coef_c, &root_1, &root_2);
+        PrintRootsIntoFile(root_1, root_2, roots_cnt, expected_ammount_of_roots, expected_root1, expected_root2, result_file);
+    }
+
+    fclose(file);
+
 }
 
 
@@ -226,7 +335,7 @@ RootsNumb Find_roots(double coef_a, double coef_b, double coef_c, double* root_1
 }
 
 
-// TODO: add docs (doxygen)
+// TODO: add docs (doxygen) +
 // TODO: add unit test
 // TODO: read argc, argv arg_parse : task.exe -i stdin -o output.txt -t
 // TODO: function pointer (callback)
@@ -240,20 +349,27 @@ RootsNumb Find_roots(double coef_a, double coef_b, double coef_c, double* root_1
  */
 int main()
 {
-    printf("Данная программа находит решения квадратного уравнения, имеющего вид ax^2 + bx + c = 0\n");
-    printf("Введите коэффициенты a, b, c через пробел\n");
+    WorkWithFile();
 
-    double coef_a = NAN;
-    double coef_b = NAN;
-    double coef_c = NAN;
+//    printf("This program finds solutions to a quadratic equation of the form ax^2 + bx + c = 0\n");
+//    printf("Enter coefficients a, b, c separated by spaces\n");
+//
+//    double coef_a = NAN;
+//    double coef_b = NAN;
+//    double coef_c = NAN;
+//
+//
+//
+//
+//
+//    ScanInp(&coef_a, &coef_b, &coef_c);
+//
+//    double root_1 = 0;
+//    double root_2 = 0;
+//
+//    RootsNumb roots_cnt = Find_roots(coef_a, coef_b, coef_c, &root_1, &root_2);
+//    PrintRoots(root_1, root_2, roots_cnt);
 
-    ScanInp(&coef_a, &coef_b, &coef_c);
-
-    double root_1 = 0;
-    double root_2 = 0;
-
-    RootsNumb roots_cnt = Find_roots(coef_a, coef_b, coef_c, &root_1, &root_2);
-    PrintRoots(root_1, root_2, roots_cnt);
 
 
     return 0;
