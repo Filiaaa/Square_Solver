@@ -1,0 +1,261 @@
+\doxysection{task1.\+cpp File Reference}
+\hypertarget{task1_8cpp}{}\label{task1_8cpp}\index{task1.cpp@{task1.cpp}}
+{\ttfamily \#include $<$TXLib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} \+: int \{ \mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0ae117e3533122c80b262257b49b21cddf}{ZERO}} = 0
+, \mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0a7a725f13af144bdef532d0389ba75e0d}{ONE}} = 1
+, \mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0a0e793500a63ffa575b9b712ca3bc9851}{TWO}} = 2
+, \mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0a2e6059d72d8fde88f3127eb147e4eff8}{INF}} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for the ammount of roots. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{task1_8cpp_af4f8e6c818fcd1f61ec5663d3167e047}{Find\+\_\+discriminant}} (double coef\+\_\+a, double coef\+\_\+b, double coef\+\_\+c)
+\begin{DoxyCompactList}\small\item\em Function for finding descriminant. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} \mbox{\hyperlink{task1_8cpp_adf941e854980b0f8a9a81365c37de85a}{Find\+\_\+roots}} (double coef\+\_\+a, double coef\+\_\+b, double coef\+\_\+c, double \texorpdfstring{$\ast$}{*}root\+\_\+1, double \texorpdfstring{$\ast$}{*}root\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Function that find roots. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} \mbox{\hyperlink{task1_8cpp_ad7d7ca16827051295449cb37155bccf0}{Solve\+\_\+square\+\_\+equation}} (double coef\+\_\+a, double coef\+\_\+b, double coef\+\_\+c, double \texorpdfstring{$\ast$}{*}root\+\_\+1, double \texorpdfstring{$\ast$}{*}root\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Function that solves square equation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} \mbox{\hyperlink{task1_8cpp_a91770ca96e8b0efa1dcd3c909e5ce0f8}{Solve\+\_\+linear\+\_\+equation}} (double coef\+\_\+b, double coef\+\_\+c, double \texorpdfstring{$\ast$}{*}root\+\_\+1)
+\begin{DoxyCompactList}\small\item\em Function that solves linear equation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} \mbox{\hyperlink{task1_8cpp_afb56b3df2ed8b4c0aa03b52b69f21e9d}{Solve\+\_\+constant\+\_\+equation}} (double coef\+\_\+c)
+\begin{DoxyCompactList}\small\item\em Function that solves equation of the form c = 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{task1_8cpp_a7fff4d9a8b2010b9ace72551882106aa}{Print\+Roots}} (double root\+\_\+1, double root\+\_\+2, \mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} roots\+\_\+cnt)
+\begin{DoxyCompactList}\small\item\em Function that prints roots. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{task1_8cpp_a204de861a880df9ebe27f4c49f6f077f}{Scan\+Inp}} (double \texorpdfstring{$\ast$}{*}coef\+\_\+a, double \texorpdfstring{$\ast$}{*}coef\+\_\+b, double \texorpdfstring{$\ast$}{*}coef\+\_\+c)
+\begin{DoxyCompactList}\small\item\em Function that scans input. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{task1_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const double \mbox{\hyperlink{task1_8cpp_aa448f27f3adfa048dbaf51a2481a9625}{very\+\_\+small\+\_\+double}} = 1e-\/8
+\begin{DoxyCompactList}\small\item\em Very small numb for comparison. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{task1_8cpp_ac1e66156081563c054a318323814e0a0}\index{task1.cpp@{task1.cpp}!RootsNumb@{RootsNumb}}
+\index{RootsNumb@{RootsNumb}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{RootsNumb}{RootsNumb}}
+{\footnotesize\ttfamily \label{task1_8cpp_ac1e66156081563c054a318323814e0a0} 
+enum \mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} \+: int}
+
+
+
+Enumeration for the ammount of roots. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ZERO} & -\/ If there are no roots. \\
+\hline
+{\em ONE} & -\/ If there is only one root. \\
+\hline
+{\em TWO} & -\/ If there are two roots. \\
+\hline
+{\em INF} & -\/ If every x is root for the equation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ZERO@{ZERO}!task1.cpp@{task1.cpp}}\index{task1.cpp@{task1.cpp}!ZERO@{ZERO}}}\Hypertarget{task1_8cpp_ac1e66156081563c054a318323814e0a0ae117e3533122c80b262257b49b21cddf}\label{task1_8cpp_ac1e66156081563c054a318323814e0a0} 
+ZERO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ONE@{ONE}!task1.cpp@{task1.cpp}}\index{task1.cpp@{task1.cpp}!ONE@{ONE}}}\Hypertarget{task1_8cpp_ac1e66156081563c054a318323814e0a0a7a725f13af144bdef532d0389ba75e0d}\label{task1_8cpp_ac1e66156081563c054a318323814e0a0} 
+ONE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TWO@{TWO}!task1.cpp@{task1.cpp}}\index{task1.cpp@{task1.cpp}!TWO@{TWO}}}\Hypertarget{task1_8cpp_ac1e66156081563c054a318323814e0a0a0e793500a63ffa575b9b712ca3bc9851}\label{task1_8cpp_ac1e66156081563c054a318323814e0a0} 
+TWO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INF@{INF}!task1.cpp@{task1.cpp}}\index{task1.cpp@{task1.cpp}!INF@{INF}}}\Hypertarget{task1_8cpp_ac1e66156081563c054a318323814e0a0a2e6059d72d8fde88f3127eb147e4eff8}\label{task1_8cpp_ac1e66156081563c054a318323814e0a0} 
+INF&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{task1_8cpp_af4f8e6c818fcd1f61ec5663d3167e047}\index{task1.cpp@{task1.cpp}!Find\_discriminant@{Find\_discriminant}}
+\index{Find\_discriminant@{Find\_discriminant}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{Find\_discriminant()}{Find\_discriminant()}}
+{\footnotesize\ttfamily \label{task1_8cpp_af4f8e6c818fcd1f61ec5663d3167e047} 
+double Find\+\_\+discriminant (\begin{DoxyParamCaption}\item[{double}]{coef\+\_\+a}{, }\item[{double}]{coef\+\_\+b}{, }\item[{double}]{coef\+\_\+c}{}\end{DoxyParamCaption})}
+
+
+
+Function for finding descriminant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & coef\+\_\+a -\/ coef before x². \\
+\hline
+{\em double} & coef\+\_\+b -\/ coef before x. \\
+\hline
+{\em double} & coef\+\_\+b -\/ free coef. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double -\/ discriminant 
+\end{DoxyReturn}
+\Hypertarget{task1_8cpp_adf941e854980b0f8a9a81365c37de85a}\index{task1.cpp@{task1.cpp}!Find\_roots@{Find\_roots}}
+\index{Find\_roots@{Find\_roots}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{Find\_roots()}{Find\_roots()}}
+{\footnotesize\ttfamily \label{task1_8cpp_adf941e854980b0f8a9a81365c37de85a} 
+\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} Find\+\_\+roots (\begin{DoxyParamCaption}\item[{double}]{coef\+\_\+a}{, }\item[{double}]{coef\+\_\+b}{, }\item[{double}]{coef\+\_\+c}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{root\+\_\+1}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{root\+\_\+2}{}\end{DoxyParamCaption})}
+
+
+
+Function that find roots. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & coef\+\_\+a -\/ coef before x². \\
+\hline
+{\em double} & coef\+\_\+b -\/ coef before x. \\
+\hline
+{\em double} & coef\+\_\+b -\/ free coef. \\
+\hline
+{\em double\texorpdfstring{$\ast$}{*}} & root1 -\/ pointer to first root. \\
+\hline
+{\em double\texorpdfstring{$\ast$}{*}} & root2 -\/ pointer to second root. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Roots\+Numb -\/ ammount of roots 
+\end{DoxyReturn}
+\Hypertarget{task1_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{task1.cpp@{task1.cpp}!main@{main}}
+\index{main@{main}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{task1_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Main function. This function is responsible for dialogue with the user and outputting a solution. \Hypertarget{task1_8cpp_a7fff4d9a8b2010b9ace72551882106aa}\index{task1.cpp@{task1.cpp}!PrintRoots@{PrintRoots}}
+\index{PrintRoots@{PrintRoots}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{PrintRoots()}{PrintRoots()}}
+{\footnotesize\ttfamily \label{task1_8cpp_a7fff4d9a8b2010b9ace72551882106aa} 
+void Print\+Roots (\begin{DoxyParamCaption}\item[{double}]{root\+\_\+1}{, }\item[{double}]{root\+\_\+2}{, }\item[{\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}}}]{roots\+\_\+cnt}{}\end{DoxyParamCaption})}
+
+
+
+Function that prints roots. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & root\+\_\+1 -\/ first root. \\
+\hline
+{\em root\+\_\+2} & -\/ second root. \\
+\hline
+{\em Roots\+Numb} & roots\+\_\+cnt -\/ ammount of roots. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{task1_8cpp_a204de861a880df9ebe27f4c49f6f077f}\index{task1.cpp@{task1.cpp}!ScanInp@{ScanInp}}
+\index{ScanInp@{ScanInp}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{ScanInp()}{ScanInp()}}
+{\footnotesize\ttfamily \label{task1_8cpp_a204de861a880df9ebe27f4c49f6f077f} 
+void Scan\+Inp (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{coef\+\_\+a}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{coef\+\_\+b}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{coef\+\_\+c}{}\end{DoxyParamCaption})}
+
+
+
+Function that scans input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double\texorpdfstring{$\ast$}{*}} & coef\+\_\+a pointer to coef\+\_\+a(coef before x²). \\
+\hline
+{\em double\texorpdfstring{$\ast$}{*}} & coef\+\_\+b pointer to coef\+\_\+b(coef before x). \\
+\hline
+{\em double\texorpdfstring{$\ast$}{*}} & coef\+\_\+c pointer to coef\+\_\+c(free coef). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{task1_8cpp_afb56b3df2ed8b4c0aa03b52b69f21e9d}\index{task1.cpp@{task1.cpp}!Solve\_constant\_equation@{Solve\_constant\_equation}}
+\index{Solve\_constant\_equation@{Solve\_constant\_equation}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{Solve\_constant\_equation()}{Solve\_constant\_equation()}}
+{\footnotesize\ttfamily \label{task1_8cpp_afb56b3df2ed8b4c0aa03b52b69f21e9d} 
+\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} Solve\+\_\+constant\+\_\+equation (\begin{DoxyParamCaption}\item[{double}]{coef\+\_\+c}{}\end{DoxyParamCaption})}
+
+
+
+Function that solves equation of the form c = 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & coef\+\_\+c -\/ free coef. \\
+\hline
+{\em double\texorpdfstring{$\ast$}{*}} & root1 -\/ pointer to first root. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Roots\+Numb -\/ ammount of roots 
+\end{DoxyReturn}
+\Hypertarget{task1_8cpp_a91770ca96e8b0efa1dcd3c909e5ce0f8}\index{task1.cpp@{task1.cpp}!Solve\_linear\_equation@{Solve\_linear\_equation}}
+\index{Solve\_linear\_equation@{Solve\_linear\_equation}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{Solve\_linear\_equation()}{Solve\_linear\_equation()}}
+{\footnotesize\ttfamily \label{task1_8cpp_a91770ca96e8b0efa1dcd3c909e5ce0f8} 
+\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} Solve\+\_\+linear\+\_\+equation (\begin{DoxyParamCaption}\item[{double}]{coef\+\_\+b}{, }\item[{double}]{coef\+\_\+c}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{root\+\_\+1}{}\end{DoxyParamCaption})}
+
+
+
+Function that solves linear equation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & coef\+\_\+a -\/ coef before x². \\
+\hline
+{\em double} & coef\+\_\+b -\/ coef before x. \\
+\hline
+{\em double} & coef\+\_\+c -\/ free coef. \\
+\hline
+{\em double\texorpdfstring{$\ast$}{*}} & root1 -\/ pointer to first root. \\
+\hline
+{\em double\texorpdfstring{$\ast$}{*}} & root1 -\/ pointer to second root. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Roots\+Numb -\/ ammount of roots 
+\end{DoxyReturn}
+\Hypertarget{task1_8cpp_ad7d7ca16827051295449cb37155bccf0}\index{task1.cpp@{task1.cpp}!Solve\_square\_equation@{Solve\_square\_equation}}
+\index{Solve\_square\_equation@{Solve\_square\_equation}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{Solve\_square\_equation()}{Solve\_square\_equation()}}
+{\footnotesize\ttfamily \label{task1_8cpp_ad7d7ca16827051295449cb37155bccf0} 
+\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} Solve\+\_\+square\+\_\+equation (\begin{DoxyParamCaption}\item[{double}]{coef\+\_\+a}{, }\item[{double}]{coef\+\_\+b}{, }\item[{double}]{coef\+\_\+c}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{root\+\_\+1}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{root\+\_\+2}{}\end{DoxyParamCaption})}
+
+
+
+Function that solves square equation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & coef\+\_\+a -\/ coef before x². \\
+\hline
+{\em double} & coef\+\_\+b -\/ coef before x. \\
+\hline
+{\em double} & coef\+\_\+c -\/ free coef. \\
+\hline
+{\em double\texorpdfstring{$\ast$}{*}} & root1 -\/ pointer to first root. \\
+\hline
+{\em double\texorpdfstring{$\ast$}{*}} & root2 -\/ pointer to second root. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Roots\+Numb -\/ ammount of roots 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{task1_8cpp_aa448f27f3adfa048dbaf51a2481a9625}\index{task1.cpp@{task1.cpp}!very\_small\_double@{very\_small\_double}}
+\index{very\_small\_double@{very\_small\_double}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{very\_small\_double}{very\_small\_double}}
+{\footnotesize\ttfamily \label{task1_8cpp_aa448f27f3adfa048dbaf51a2481a9625} 
+const double very\+\_\+small\+\_\+double = 1e-\/8}
+
+
+
+Very small numb for comparison. 
+
