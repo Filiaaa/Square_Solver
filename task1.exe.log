@@ -1,0 +1,278 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe,
+
+ВНЕЗАПНО: Целочисленное деление на ноль.
+
+#1: Исключение EXCEPTION_INT_DIVIDE_BY_ZERO (0xC0000094) при выполнении кода по адресу 0x0042C2B5 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005062FC (32-bit), Flags: Cmdre0, Thread: 0xEC4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 21 2024 17:48:05, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 21 2024 17:48:14
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe,
+
+ВНЕЗАПНО: Целочисленное деление на ноль.
+
+#1: Исключение EXCEPTION_INT_DIVIDE_BY_ZERO (0xC0000094) при выполнении кода по адресу 0x0042C2B5 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005062FC (32-bit), Flags: Cmdre0, Thread: 0xEC4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 21 2024 17:48:05, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 21 2024 17:48:14
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe,
+
+ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0042C346 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005062FC (32-bit), Flags: Cmdre0, Thread: 0x5E74 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 21 2024 17:51:45, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 21 2024 17:51:54
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0042C346 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005062FC (32-bit), Flags: Cmdre0, Thread: 0x5E74 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 21 2024 17:51:45, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 21 2024 17:51:54
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe,
+
+ВНЕЗАПНО: Деление на ноль при операции с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_DIVIDE_BY_ZERO (0xC000008E) при выполнении кода по адресу 0x0042C2DA в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005062FC (32-bit), Flags: Cmdre0, Thread: 0x4B90 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 21 2024 17:54:43, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 21 2024 17:54:52
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Деление на ноль при операции с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_DIVIDE_BY_ZERO (0xC000008E) при выполнении кода по адресу 0x0042C2DA в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005062FC (32-bit), Flags: Cmdre0, Thread: 0x4B90 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 21 2024 17:54:43, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 21 2024 17:54:52
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7678B5CC. Попытка прочесть данные по адресу 0x000F386D в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005062FC (32-bit), Flags: Cmdre0, Thread: 0x3E44 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 21 2024 19:18:22, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 21 2024 19:18:31
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7678B5CC. Попытка прочесть данные по адресу 0x000F386D в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005062FC (32-bit), Flags: Cmdre0, Thread: 0x3E44 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 21 2024 19:18:22, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 21 2024 19:18:31
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB
+
+--------------------------------------------------
