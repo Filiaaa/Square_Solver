@@ -276,3 +276,213 @@ Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\task1.exe
 Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x767A2760. Попытка записать данные по адресу 0x76766E3D в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x2994 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 23 2024 17:31:40, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 23 2024 17:31:55
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x767A2760. Попытка записать данные по адресу 0x76766E3D в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x2994 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 23 2024 17:31:40, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 23 2024 17:31:56
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x767A2760. Попытка записать данные по адресу 0x00401290 в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x6144 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 23 2024 17:32:37, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 23 2024 17:32:51
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x767A2760. Попытка записать данные по адресу 0x00401290 в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x6144 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 23 2024 17:32:37, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 23 2024 17:32:51
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x767A2760. Попытка записать данные по адресу 0x00401290 в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x3A00 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 23 2024 17:36:21, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 23 2024 17:36:35
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x767A2760. Попытка записать данные по адресу 0x00401290 в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x3A00 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 23 2024 17:36:21, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 23 2024 17:36:35
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------

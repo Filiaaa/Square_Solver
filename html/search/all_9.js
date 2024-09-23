@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['zero_0',['ZERO',['../task1_8cpp.html#ac1e66156081563c054a318323814e0a0ae117e3533122c80b262257b49b21cddf',1,'task1.cpp']]]
+  ['task1_2ecpp_0',['task1.cpp',['../task1_8cpp.html',1,'']]],
+  ['two_1',['TWO',['../task1_8cpp.html#ac1e66156081563c054a318323814e0a0a0e793500a63ffa575b9b712ca3bc9851',1,'task1.cpp']]]
 ];

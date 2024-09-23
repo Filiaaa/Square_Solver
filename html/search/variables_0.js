@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['very_5fsmall_5fdouble_0',['very_small_double',['../task1_8cpp.html#aa448f27f3adfa048dbaf51a2481a9625',1,'task1.cpp']]]
+  ['coef_5fa_0',['coef_a',['../struct_coefs.html#a95b3a5307fd4522f6f96975038258b90',1,'Coefs']]],
+  ['coef_5fb_1',['coef_b',['../struct_coefs.html#a19cc7bb3c332109b4798643fdf69d8bf',1,'Coefs']]],
+  ['coef_5fc_2',['coef_c',['../struct_coefs.html#a3b7ea099be264359832350df340f4000',1,'Coefs']]]
 ];

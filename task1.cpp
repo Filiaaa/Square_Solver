@@ -1,22 +1,15 @@
-#include <TXLib.h>
-#include<stdio.h>
-#include <assert.h>
-#include <math.h>
+/**
+ * @brief including header file.
+ */
+#include "header.cpp"
+
+
 /**
  * @brief Very small numb for comparison.
  */
 const double very_small_double = 1e-8;
 
 
-//Какие есть случаи:
-//1) оно квадратное
-//    1.1) один корень +
-//    1.2) два корня +
-//    1.3) нет корней +
-//2) оно выраждается в линейное +
-//3) оно выраждается в константа = 0
-//    3.1) константа = 0 => каждый x подходит
-//    3.2) константа != 0 => нет решений
 
 /**
  * @mainpage Square_Solver
@@ -45,15 +38,35 @@ enum RootsNumb : int
 };
 
 /**
+ * @struct Coefs
+ * @brief Struct for equantion's coefs
+ */
+struct Coefs {
+   double coef_a; /**< coef before x^2 */
+   double coef_b; /**< coef before x */
+   double coef_c; /**< free coef */
+};
+
+
+/**
+ * @struct Roots
+ * @brief Struct for equantion's roots
+ */
+struct Roots {
+   double root_1; /**< first equantion's root */
+   double root_2; /**< second equantion's root */
+};
+
+/**
  * @brief Function for finding descriminant.
  */
 /**
- * @param double coef_a - coef before x².
+ * @param double coef_a - coef before x^2.
  * @param double coef_b - coef before x.
  * @param double coef_b - free coef.
  * @return double - discriminant
  */
-double Find_discriminant(double coef_a, double coef_b, double coef_c);
+double Find_discriminant(Coefs input_coefs);
 /**
  * @brief Function that find roots.
  */
@@ -65,7 +78,7 @@ double Find_discriminant(double coef_a, double coef_b, double coef_c);
  * @param double* root2 - pointer to second root.
  * @return RootsNumb - ammount of roots
  */
-RootsNumb Find_roots(double coef_a, double coef_b, double coef_c, double* root_1, double* root_2);
+RootsNumb Find_roots(Coefs input_coefs, Roots* result_roots);
 /**
  * @brief Function that solves square equation
  */
@@ -77,7 +90,7 @@ RootsNumb Find_roots(double coef_a, double coef_b, double coef_c, double* root_1
  * @param double* root2 - pointer to second root.
  * @return RootsNumb - ammount of roots
  */
-RootsNumb Solve_square_equation(double coef_a, double coef_b, double coef_c, double* root_1, double* root_2);
+RootsNumb Solve_square_equation(Coefs input_coefs, struct Roots* result_roots);
 /**
  * @brief Function that solves linear equation
  */
@@ -89,7 +102,7 @@ RootsNumb Solve_square_equation(double coef_a, double coef_b, double coef_c, dou
  * @param double* root1 - pointer to second root.
  * @return RootsNumb - ammount of roots
  */
-RootsNumb Solve_linear_equation(double coef_b, double coef_c, double* root_1);
+RootsNumb Solve_linear_equation(Coefs input_coefs, struct Roots* result_roots);
 /**
  * @brief Function that solves equation of the form c = 0
  */
@@ -98,7 +111,7 @@ RootsNumb Solve_linear_equation(double coef_b, double coef_c, double* root_1);
  * @param double* root1 - pointer to first root.
  * @return RootsNumb - ammount of roots
  */
-RootsNumb Solve_constant_equation(double coef_c);
+RootsNumb Solve_constant_equation(Coefs input_coefs);
 /**
  * @brief Function that prints roots
  */
@@ -107,7 +120,7 @@ RootsNumb Solve_constant_equation(double coef_c);
  * @param root_2 - second root.
  * @param RootsNumb roots_cnt - ammount of roots.
  */
-void PrintRoots(double root_1, double root_2, RootsNumb roots_cnt);
+void PrintRoots(struct Roots result_roots, RootsNumb roots_cnt);
 /**
  * @brief Function that scans input
  */
@@ -116,14 +129,50 @@ void PrintRoots(double root_1, double root_2, RootsNumb roots_cnt);
  * @param double* coef_b pointer to coef_b(coef before x).
  * @param double* coef_c pointer to coef_c(free coef).
  */
-void ScanInp(double* coef_a, double* coef_b, double* coef_c);
+void ScanInp(struct Coefs* input_coefs);
+
+/**
+ * @brief Function that prints result into file
+ */
+/**
+ * @param struct Roots result_roots - program result.
+ * @param RootsNumb roots_cnt - ammount of roots.
+ * @param int expected_ammount_of_roots - ammount of roots in answer.
+ * @param struct Roots input_roots - roots in answer.
+ * @param FILE* result_file - output file.
+ */
+void PrintRootsIntoFile(struct Roots result_roots, RootsNumb roots_cnt, int expected_ammount_of_roots,
+ struct Roots input_roots, FILE* result_file);
+
+ /**
+ * @brief Function that scans input file
+ */
+/**
+ * @param struct Coefs* input_coefs - coefs from input.
+ * @param int* expected_ammount_of_roots - ammount of roots in answer.
+ * @param struct Roots* input_roots - roots in answer.
+ * @param FILE* file - input file.
+ * @param FILE* result_file - output file.
+ * @return int - 0 if there are no strings after this input. 1 if there are strings after this input.
+ */
+ int ScanFile(struct Coefs* input_coefs, int* expected_ammount_of_roots, struct Roots* input_roots,  FILE* file, FILE* result_file);
 
 
-void ScanInp(double* coef_a, double* coef_b, double* coef_c)
+ /**
+ * @brief Function that open files and find solves for every string
+ */
+ void WorkWithFile();
+
+  /**
+ * @brief This function is responsible for dialogue with the user and outputting a solution.
+ */
+ void WorkWithConsole();
+
+void ScanInp(struct Coefs* input_coefs)
 {
     int inp = 0;
 
-    while(scanf("%lg%lg%lg", coef_a, coef_b, coef_c) != 3 && (inp = getchar()) != -1)
+    while(scanf("%lg%lg%lg", &input_coefs->coef_a, &input_coefs->coef_b, &input_coefs->coef_c) != 3 && (inp = getchar()) != EOF)
     {
         printf("Bro, you introduced bullshit. Try again\n");
         while(inp != '\n')
@@ -133,7 +182,7 @@ void ScanInp(double* coef_a, double* coef_b, double* coef_c)
     }
 }
 
-void PrintRoots(double root_1, double root_2, RootsNumb roots_cnt)
+void PrintRoots(struct Roots result_roots, RootsNumb roots_cnt)
 {
     switch(roots_cnt)
     {
@@ -141,10 +190,10 @@ void PrintRoots(double root_1, double root_2, RootsNumb roots_cnt)
             printf("Your equation has no roots");
             break;
         case ONE:
-            printf("Your equation has a single root x = %lg", root_1);
+            printf("Your equation has a single root x = %lg", result_roots.root_1);
             break;
         case TWO:
-            printf("Your equation has two roots x1 = %lg, x2 = %lg", root_1, root_2);
+            printf("Your equation has two roots x1 = %lg, x2 = %lg", result_roots.root_1, result_roots.root_2);
             break;
         case INF:
             printf("Your equation has an infinite number of roots");
@@ -155,8 +204,8 @@ void PrintRoots(double root_1, double root_2, RootsNumb roots_cnt)
 }
 
 
-void PrintRootsIntoFile(double root_1, double root_2, RootsNumb roots_cnt, int expected_ammount_of_roots, double expected_root1,
- double expected_root2, FILE* result_file)
+void PrintRootsIntoFile(struct Roots result_roots, RootsNumb roots_cnt, int expected_ammount_of_roots,
+ struct Roots input_roots, FILE* result_file)
 {
 
     switch(roots_cnt)
@@ -173,26 +222,26 @@ void PrintRootsIntoFile(double root_1, double root_2, RootsNumb roots_cnt, int e
             }
             break;
         case ONE:
-            fprintf(result_file, "x1 = %lg - ", root_1);
-            if(expected_ammount_of_roots == 1 && root_1 == expected_root1)
+            fprintf(result_file, "x1 = %lg - ", input_roots.root_1);
+            if(expected_ammount_of_roots == 1 && result_roots.root_1 == input_roots.root_1)
             {
                 fprintf(result_file, "correct\n");
             }
             else
             {
-                fprintf(result_file, "not correct, expected root = %lg\n", expected_root1);
+                fprintf(result_file, "not correct, expected root = %lg\n", input_roots.root_1);
             }
             break;
         case TWO:
-            fprintf(result_file, "x1 = %lg x2 = %lg - " , root_1, root_2);
-            if(expected_ammount_of_roots == 2 && (root_1 == expected_root1 && root_2 == expected_root2)
-            || (root_1 == expected_root2 && root_2 == expected_root1))
+            fprintf(result_file, "x1 = %lg x2 = %lg - " , input_roots.root_1, input_roots.root_2);
+            if(expected_ammount_of_roots == 2 && (result_roots.root_1 == input_roots.root_1 && result_roots.root_2 == input_roots.root_2)
+            || (result_roots.root_1 == input_roots.root_2 && result_roots.root_2 == input_roots.root_1))
             {
                 fprintf(result_file, "correct\n");
             }
             else
             {
-                fprintf(result_file, "not correct, expected first root = %lg expected first root = %lg\n", expected_root1, expected_root2);
+                fprintf(result_file, "not correct, expected first root = %lg expected first root = %lg\n", input_roots.root_1, input_roots.root_2);
             }
             break;
         case INF:
@@ -211,12 +260,12 @@ void PrintRootsIntoFile(double root_1, double root_2, RootsNumb roots_cnt, int e
     }
 }
 
-int ScanFile(double* coef_a, double* coef_b, double* coef_c, int* expected_ammount_of_roots, double* expected_root1, double* expected_root2,  FILE* file, FILE* result_file)
+int ScanFile(struct Coefs* input_coefs, int* expected_ammount_of_roots, struct Roots* input_roots,  FILE* file, FILE* result_file)
 {
     int inp = 0;
-    if(fscanf(file, "%lg%lg%lg%d%lg%lg", coef_a, coef_b, coef_c, expected_ammount_of_roots, expected_root1, expected_root2) == 6)
+    if(fscanf(file, "%lg%lg%lg%d%lg%lg", &input_coefs->coef_a, &input_coefs->coef_b, &input_coefs->coef_c, expected_ammount_of_roots, &input_roots->root_1, &input_roots->root_2) == 6)
     {
-        fprintf(result_file, "%lg %lg %lg ", *coef_a, *coef_b, *coef_c);
+        fprintf(result_file, "%lg %lg %lg ", input_coefs->coef_a, input_coefs->coef_b, input_coefs->coef_c);
         return 1;
     }
     else
@@ -236,27 +285,25 @@ void WorkWithFile()
     {
         fprintf(result_file, "FileReadError");
     }
-    //file = ("Test.txt", "rb");
 
+    struct Coefs input_coefs;
+    struct Roots result_roots;
+    struct Roots input_roots;
 
-    double coef_a = NAN;
-    double coef_b = NAN;
-    double coef_c = NAN;
     int expected_ammount_of_roots = NAN;
+
     double expected_root1 = NAN;
     double expected_root2 = NAN;
 
 
-    while(ScanFile(&coef_a, &coef_b, &coef_c, &expected_ammount_of_roots,&expected_root1, &expected_root2, file, result_file))
+    while(ScanFile(&input_coefs, &expected_ammount_of_roots, &input_roots, file, result_file))
     {
-        //ScanFile(&coef_a, &coef_b, &coef_c, &expected_ammount_of_roots,&expected_root1, &expected_root2, file, result_file);
-        //ScanInp(&coef_a, &coef_b, &coef_c);
 
         double root_1 = 0;
         double root_2 = 0;
 
-        RootsNumb roots_cnt = Find_roots(coef_a, coef_b, coef_c, &root_1, &root_2);
-        PrintRootsIntoFile(root_1, root_2, roots_cnt, expected_ammount_of_roots, expected_root1, expected_root2, result_file);
+        RootsNumb roots_cnt = Find_roots(input_coefs, &result_roots);
+        PrintRootsIntoFile(result_roots, roots_cnt, expected_ammount_of_roots, input_roots, result_file);
     }
 
     fclose(file);
@@ -264,27 +311,34 @@ void WorkWithFile()
 }
 
 
-double Find_discriminant(double coef_a, double coef_b, double coef_c)
+double Find_discriminant(Coefs input_coefs)
 {
-    double discriminant = coef_b*coef_b - 4*coef_a*coef_c;
+    double coef_a = input_coefs.coef_a;
+    double coef_b = input_coefs.coef_b;
+    double coef_c = input_coefs.coef_c;
+
+    double discriminant = coef_b* coef_b - 4* coef_a * coef_c;
 
     return discriminant;
 }
 
-RootsNumb Solve_square_equation(double coef_a, double coef_b, double coef_c, double* root_1, double* root_2)
+RootsNumb Solve_square_equation(Coefs input_coefs, struct Roots* result_roots)
 {
-    double discriminant = Find_discriminant(coef_a, coef_b, coef_c);
+    double discriminant = Find_discriminant(input_coefs);
+    double coef_a = input_coefs.coef_a;
+    double coef_b = input_coefs.coef_b;
+    double coef_c = input_coefs.coef_c;
 
     if(discriminant < -very_small_double)
     {
-        *root_1 = -1;
+        result_roots -> root_1 = -1;
 
         return ZERO;
     }
 
     if(-very_small_double <= discriminant && discriminant <= very_small_double)
     {
-        *root_1 = -coef_b / (2 * coef_a);
+        result_roots -> root_1  = -coef_b / (2 * coef_a);
 
         return ONE;
     }
@@ -293,45 +347,53 @@ RootsNumb Solve_square_equation(double coef_a, double coef_b, double coef_c, dou
     {
         double sqrt_discriminant = sqrt(discriminant);
 
-        *root_1 = (-coef_b + sqrt_discriminant) / (2 * coef_a);
-        *root_2 = (-coef_b - sqrt_discriminant) / (2 * coef_a);
+        result_roots -> root_1 = (-coef_b + sqrt_discriminant) / (2 * coef_a);
+        result_roots -> root_2 = (-coef_b - sqrt_discriminant) / (2 * coef_a);
 
         return TWO;
     }
 }
 
-RootsNumb Solve_linear_equation(double coef_b, double coef_c, double* root)
+RootsNumb Solve_linear_equation(Coefs input_coefs, struct Roots* result_roots)
 {
+    double coef_b = input_coefs.coef_b;
+    double coef_c = input_coefs.coef_c;
+
     if(coef_c == 0)
     {
-        *root = 0;
+        result_roots -> root_1 = 0;
         return ONE;
     }
 
-    *root = -coef_c / coef_b;
+    result_roots -> root_1 = -coef_c / coef_b;
 
     return ONE;
 }
 
-RootsNumb Solve_constant_equation(double coef_c)
+RootsNumb Solve_constant_equation(Coefs input_coefs)
 {
+    double coef_c = input_coefs.coef_c;
     return (coef_c == 0 ? INF : ZERO);
 }
 
-RootsNumb Find_roots(double coef_a, double coef_b, double coef_c, double* root_1, double* root_2)
+RootsNumb Find_roots(Coefs input_coefs, Roots* result_roots)
 {
+    double coef_a = input_coefs.coef_a;
+    double coef_b = input_coefs.coef_b;
+    double coef_c = input_coefs.coef_c;
+
     if(coef_a == 0 && coef_b == 0)
     {
-        return Solve_constant_equation(coef_c);
+        return Solve_constant_equation(input_coefs);
     }
 
     if(coef_a == 0)
     {
-        return Solve_linear_equation(coef_b, coef_c, root_1);
+        return Solve_linear_equation(input_coefs, result_roots);
 
     }
 
-    return Solve_square_equation(coef_a, coef_b, coef_c, root_1, root_2);
+    return Solve_square_equation(input_coefs, result_roots);
 }
 
 
@@ -339,36 +401,43 @@ RootsNumb Find_roots(double coef_a, double coef_b, double coef_c, double* root_1
 // TODO: add unit test
 // TODO: read argc, argv arg_parse : task.exe -i stdin -o output.txt -t
 // TODO: function pointer (callback)
-//обработку ввода в функцию обвернуть
 
 
 
+
+void WorkWithConsole()
+{
+    printf("This program finds solutions to a quadratic equation of the form ax^2 + bx + c = 0\n");
+    printf("Enter coefficients a, b, c separated by spaces\n");
+
+    struct Coefs input_coefs;
+    struct Roots result_roots;
+
+
+
+
+
+    ScanInp(&input_coefs);
+
+
+    RootsNumb roots_cnt = Find_roots(input_coefs, &result_roots);
+    PrintRoots(result_roots, roots_cnt);
+
+}
 
  /** Main function.
- *  This function is responsible for dialogue with the user and outputting a solution.
+ *  In this function you can choose if you want to work with a file or with a console.
  */
 int main()
 {
+    //This Works With File
+
     WorkWithFile();
 
-//    printf("This program finds solutions to a quadratic equation of the form ax^2 + bx + c = 0\n");
-//    printf("Enter coefficients a, b, c separated by spaces\n");
-//
-//    double coef_a = NAN;
-//    double coef_b = NAN;
-//    double coef_c = NAN;
-//
-//
-//
-//
-//
-//    ScanInp(&coef_a, &coef_b, &coef_c);
-//
-//    double root_1 = 0;
-//    double root_2 = 0;
-//
-//    RootsNumb roots_cnt = Find_roots(coef_a, coef_b, coef_c, &root_1, &root_2);
-//    PrintRoots(root_1, root_2, roots_cnt);
+    //This Works With Console
+
+    //WorkWithConsole();
+
 
 
 

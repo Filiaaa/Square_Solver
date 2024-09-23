@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['printroots_0',['PrintRoots',['../task1_8cpp.html#a7fff4d9a8b2010b9ace72551882106aa',1,'task1.cpp']]]
+  ['main_0',['main',['../task1_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'task1.cpp']]]
 ];

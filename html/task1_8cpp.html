@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Square_Solver: task1.cpp File Reference</title>
+<title>Square Solver: task1.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Square_Solver
+   <div id="projectname">Square Solver
    </div>
   </td>
  </tr>
@@ -85,17 +85,24 @@ $(function(){ initResizable(false); });
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">task1.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;TXLib.h&gt;</code><br />
-<code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;assert.h&gt;</code><br />
-<code>#include &lt;math.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="header_8cpp_source.html">header.cpp</a>&quot;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_coefs.html">Coefs</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for equantion's coefs.  <a href="struct_coefs.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_roots.html">Roots</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for equantion's roots.  <a href="struct_roots.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ac1e66156081563c054a318323814e0a0" id="r_ac1e66156081563c054a318323814e0a0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1e66156081563c054a318323814e0a0">RootsNumb</a> : int { <a class="el" href="#ac1e66156081563c054a318323814e0a0ae117e3533122c80b262257b49b21cddf">ZERO</a> = 0
@@ -108,34 +115,46 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af4f8e6c818fcd1f61ec5663d3167e047" id="r_af4f8e6c818fcd1f61ec5663d3167e047"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4f8e6c818fcd1f61ec5663d3167e047">Find_discriminant</a> (double coef_a, double coef_b, double coef_c)</td></tr>
-<tr class="memdesc:af4f8e6c818fcd1f61ec5663d3167e047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for finding descriminant.  <br /></td></tr>
-<tr class="separator:af4f8e6c818fcd1f61ec5663d3167e047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf941e854980b0f8a9a81365c37de85a" id="r_adf941e854980b0f8a9a81365c37de85a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ac1e66156081563c054a318323814e0a0">RootsNumb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf941e854980b0f8a9a81365c37de85a">Find_roots</a> (double coef_a, double coef_b, double coef_c, double *root_1, double *root_2)</td></tr>
-<tr class="memdesc:adf941e854980b0f8a9a81365c37de85a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that find roots.  <br /></td></tr>
-<tr class="separator:adf941e854980b0f8a9a81365c37de85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7d7ca16827051295449cb37155bccf0" id="r_ad7d7ca16827051295449cb37155bccf0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ac1e66156081563c054a318323814e0a0">RootsNumb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7d7ca16827051295449cb37155bccf0">Solve_square_equation</a> (double coef_a, double coef_b, double coef_c, double *root_1, double *root_2)</td></tr>
-<tr class="memdesc:ad7d7ca16827051295449cb37155bccf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that solves square equation.  <br /></td></tr>
-<tr class="separator:ad7d7ca16827051295449cb37155bccf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91770ca96e8b0efa1dcd3c909e5ce0f8" id="r_a91770ca96e8b0efa1dcd3c909e5ce0f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ac1e66156081563c054a318323814e0a0">RootsNumb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91770ca96e8b0efa1dcd3c909e5ce0f8">Solve_linear_equation</a> (double coef_b, double coef_c, double *root_1)</td></tr>
-<tr class="memdesc:a91770ca96e8b0efa1dcd3c909e5ce0f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that solves linear equation.  <br /></td></tr>
-<tr class="separator:a91770ca96e8b0efa1dcd3c909e5ce0f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb56b3df2ed8b4c0aa03b52b69f21e9d" id="r_afb56b3df2ed8b4c0aa03b52b69f21e9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ac1e66156081563c054a318323814e0a0">RootsNumb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb56b3df2ed8b4c0aa03b52b69f21e9d">Solve_constant_equation</a> (double coef_c)</td></tr>
-<tr class="memdesc:afb56b3df2ed8b4c0aa03b52b69f21e9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that solves equation of the form c = 0.  <br /></td></tr>
-<tr class="separator:afb56b3df2ed8b4c0aa03b52b69f21e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fff4d9a8b2010b9ace72551882106aa" id="r_a7fff4d9a8b2010b9ace72551882106aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fff4d9a8b2010b9ace72551882106aa">PrintRoots</a> (double root_1, double root_2, <a class="el" href="#ac1e66156081563c054a318323814e0a0">RootsNumb</a> roots_cnt)</td></tr>
-<tr class="memdesc:a7fff4d9a8b2010b9ace72551882106aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that prints roots.  <br /></td></tr>
-<tr class="separator:a7fff4d9a8b2010b9ace72551882106aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a204de861a880df9ebe27f4c49f6f077f" id="r_a204de861a880df9ebe27f4c49f6f077f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a204de861a880df9ebe27f4c49f6f077f">ScanInp</a> (double *coef_a, double *coef_b, double *coef_c)</td></tr>
-<tr class="memdesc:a204de861a880df9ebe27f4c49f6f077f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that scans input.  <br /></td></tr>
-<tr class="separator:a204de861a880df9ebe27f4c49f6f077f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74914f5f6a16f051e3026b1c7560fff2" id="r_a74914f5f6a16f051e3026b1c7560fff2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74914f5f6a16f051e3026b1c7560fff2">Find_discriminant</a> (<a class="el" href="struct_coefs.html">Coefs</a> input_coefs)</td></tr>
+<tr class="memdesc:a74914f5f6a16f051e3026b1c7560fff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for finding descriminant.  <br /></td></tr>
+<tr class="separator:a74914f5f6a16f051e3026b1c7560fff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca224bf1f4202adc1e294681ec095f90" id="r_aca224bf1f4202adc1e294681ec095f90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ac1e66156081563c054a318323814e0a0">RootsNumb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca224bf1f4202adc1e294681ec095f90">Find_roots</a> (<a class="el" href="struct_coefs.html">Coefs</a> input_coefs, <a class="el" href="struct_roots.html">Roots</a> *result_roots)</td></tr>
+<tr class="memdesc:aca224bf1f4202adc1e294681ec095f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that find roots.  <br /></td></tr>
+<tr class="separator:aca224bf1f4202adc1e294681ec095f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3041b78edbf1050d6988e101812347ce" id="r_a3041b78edbf1050d6988e101812347ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ac1e66156081563c054a318323814e0a0">RootsNumb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3041b78edbf1050d6988e101812347ce">Solve_square_equation</a> (<a class="el" href="struct_coefs.html">Coefs</a> input_coefs, struct <a class="el" href="struct_roots.html">Roots</a> *result_roots)</td></tr>
+<tr class="memdesc:a3041b78edbf1050d6988e101812347ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that solves square equation.  <br /></td></tr>
+<tr class="separator:a3041b78edbf1050d6988e101812347ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c8de0f92174b3d39d3d2e06405fa28" id="r_ac4c8de0f92174b3d39d3d2e06405fa28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ac1e66156081563c054a318323814e0a0">RootsNumb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4c8de0f92174b3d39d3d2e06405fa28">Solve_linear_equation</a> (<a class="el" href="struct_coefs.html">Coefs</a> input_coefs, struct <a class="el" href="struct_roots.html">Roots</a> *result_roots)</td></tr>
+<tr class="memdesc:ac4c8de0f92174b3d39d3d2e06405fa28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that solves linear equation.  <br /></td></tr>
+<tr class="separator:ac4c8de0f92174b3d39d3d2e06405fa28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d96ad47311bdea69fd03247adf74b15" id="r_a3d96ad47311bdea69fd03247adf74b15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ac1e66156081563c054a318323814e0a0">RootsNumb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d96ad47311bdea69fd03247adf74b15">Solve_constant_equation</a> (<a class="el" href="struct_coefs.html">Coefs</a> input_coefs)</td></tr>
+<tr class="memdesc:a3d96ad47311bdea69fd03247adf74b15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that solves equation of the form c = 0.  <br /></td></tr>
+<tr class="separator:a3d96ad47311bdea69fd03247adf74b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa315ae422daf596502f6eb1d4dcfa507" id="r_aa315ae422daf596502f6eb1d4dcfa507"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa315ae422daf596502f6eb1d4dcfa507">PrintRoots</a> (struct <a class="el" href="struct_roots.html">Roots</a> result_roots, <a class="el" href="#ac1e66156081563c054a318323814e0a0">RootsNumb</a> roots_cnt)</td></tr>
+<tr class="memdesc:aa315ae422daf596502f6eb1d4dcfa507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that prints roots.  <br /></td></tr>
+<tr class="separator:aa315ae422daf596502f6eb1d4dcfa507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a315ccefa7b6ddb100a42714b30015" id="r_a39a315ccefa7b6ddb100a42714b30015"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39a315ccefa7b6ddb100a42714b30015">ScanInp</a> (struct <a class="el" href="struct_coefs.html">Coefs</a> *input_coefs)</td></tr>
+<tr class="memdesc:a39a315ccefa7b6ddb100a42714b30015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that scans input.  <br /></td></tr>
+<tr class="separator:a39a315ccefa7b6ddb100a42714b30015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4abeb90404b1bbe040ccc46655c67c2f" id="r_a4abeb90404b1bbe040ccc46655c67c2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4abeb90404b1bbe040ccc46655c67c2f">PrintRootsIntoFile</a> (struct <a class="el" href="struct_roots.html">Roots</a> result_roots, <a class="el" href="#ac1e66156081563c054a318323814e0a0">RootsNumb</a> roots_cnt, int expected_ammount_of_roots, struct <a class="el" href="struct_roots.html">Roots</a> input_roots, FILE *result_file)</td></tr>
+<tr class="memdesc:a4abeb90404b1bbe040ccc46655c67c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that prints result into file.  <br /></td></tr>
+<tr class="separator:a4abeb90404b1bbe040ccc46655c67c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eba33d8678af3e6bffdf11702ca82bf" id="r_a0eba33d8678af3e6bffdf11702ca82bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0eba33d8678af3e6bffdf11702ca82bf">ScanFile</a> (struct <a class="el" href="struct_coefs.html">Coefs</a> *input_coefs, int *expected_ammount_of_roots, struct <a class="el" href="struct_roots.html">Roots</a> *input_roots, FILE *file, FILE *result_file)</td></tr>
+<tr class="memdesc:a0eba33d8678af3e6bffdf11702ca82bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that scans input file.  <br /></td></tr>
+<tr class="separator:a0eba33d8678af3e6bffdf11702ca82bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b888ae90e748f9c30be78b831ee50ff" id="r_a7b888ae90e748f9c30be78b831ee50ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b888ae90e748f9c30be78b831ee50ff">WorkWithFile</a> ()</td></tr>
+<tr class="memdesc:a7b888ae90e748f9c30be78b831ee50ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that open files and find solves for every string.  <br /></td></tr>
+<tr class="separator:a7b888ae90e748f9c30be78b831ee50ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1acef5cd3f2694c64b27e059a1505c44" id="r_a1acef5cd3f2694c64b27e059a1505c44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1acef5cd3f2694c64b27e059a1505c44">WorkWithConsole</a> ()</td></tr>
+<tr class="memdesc:a1acef5cd3f2694c64b27e059a1505c44"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is responsible for dialogue with the user and outputting a solution.  <br /></td></tr>
+<tr class="separator:a1acef5cd3f2694c64b27e059a1505c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:aa448f27f3adfa048dbaf51a2481a9625" id="r_aa448f27f3adfa048dbaf51a2481a9625"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa448f27f3adfa048dbaf51a2481a9625">very_small_double</a> = 1e-8</td></tr>
-<tr class="memdesc:aa448f27f3adfa048dbaf51a2481a9625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Very small numb for comparison.  <br /></td></tr>
+<tr class="memdesc:aa448f27f3adfa048dbaf51a2481a9625"><td class="mdescLeft">&#160;</td><td class="mdescRight">including header file.  <br /></td></tr>
 <tr class="separator:aa448f27f3adfa048dbaf51a2481a9625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -171,8 +190,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="af4f8e6c818fcd1f61ec5663d3167e047" name="af4f8e6c818fcd1f61ec5663d3167e047"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4f8e6c818fcd1f61ec5663d3167e047">&#9670;&#160;</a></span>Find_discriminant()</h2>
+<a id="a74914f5f6a16f051e3026b1c7560fff2" name="a74914f5f6a16f051e3026b1c7560fff2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74914f5f6a16f051e3026b1c7560fff2">&#9670;&#160;</a></span>Find_discriminant()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,17 +199,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">double Find_discriminant </td>
           <td>(</td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>coef_a</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="struct_coefs.html">Coefs</a></td>          <td class="paramname"><span class="paramname"><em>input_coefs</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>coef_b</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>coef_c</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -198,7 +208,7 @@ Variables</h2></td></tr>
 <p>Function for finding descriminant. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">double</td><td>coef_a - coef before x². </td></tr>
+    <tr><td class="paramname">double</td><td>coef_a - coef before x^2. </td></tr>
     <tr><td class="paramname">double</td><td>coef_b - coef before x. </td></tr>
     <tr><td class="paramname">double</td><td>coef_b - free coef. </td></tr>
   </table>
@@ -208,8 +218,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="adf941e854980b0f8a9a81365c37de85a" name="adf941e854980b0f8a9a81365c37de85a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf941e854980b0f8a9a81365c37de85a">&#9670;&#160;</a></span>Find_roots()</h2>
+<a id="aca224bf1f4202adc1e294681ec095f90" name="aca224bf1f4202adc1e294681ec095f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca224bf1f4202adc1e294681ec095f90">&#9670;&#160;</a></span>Find_roots()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,27 +227,12 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#ac1e66156081563c054a318323814e0a0">RootsNumb</a> Find_roots </td>
           <td>(</td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>coef_a</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_coefs.html">Coefs</a></td>          <td class="paramname"><span class="paramname"><em>input_coefs</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>coef_b</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>coef_c</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *</td>          <td class="paramname"><span class="paramname"><em>root_1</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *</td>          <td class="paramname"><span class="paramname"><em>root_2</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="struct_roots.html">Roots</a> *</td>          <td class="paramname"><span class="paramname"><em>result_roots</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -271,12 +266,12 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Main function. This function is responsible for dialogue with the user and outputting a solution. </p>
+<p>Main function. In this function you can choose if you want to work with a file or with a console. </p>
 
 </div>
 </div>
-<a id="a7fff4d9a8b2010b9ace72551882106aa" name="a7fff4d9a8b2010b9ace72551882106aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fff4d9a8b2010b9ace72551882106aa">&#9670;&#160;</a></span>PrintRoots()</h2>
+<a id="aa315ae422daf596502f6eb1d4dcfa507" name="aa315ae422daf596502f6eb1d4dcfa507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa315ae422daf596502f6eb1d4dcfa507">&#9670;&#160;</a></span>PrintRoots()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,12 +279,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void PrintRoots </td>
           <td>(</td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>root_1</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>root_2</em></span>, </td>
+          <td class="paramtype">struct <a class="el" href="struct_roots.html">Roots</a></td>          <td class="paramname"><span class="paramname"><em>result_roots</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -311,8 +301,105 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a204de861a880df9ebe27f4c49f6f077f" name="a204de861a880df9ebe27f4c49f6f077f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a204de861a880df9ebe27f4c49f6f077f">&#9670;&#160;</a></span>ScanInp()</h2>
+<a id="a4abeb90404b1bbe040ccc46655c67c2f" name="a4abeb90404b1bbe040ccc46655c67c2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4abeb90404b1bbe040ccc46655c67c2f">&#9670;&#160;</a></span>PrintRootsIntoFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PrintRootsIntoFile </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_roots.html">Roots</a></td>          <td class="paramname"><span class="paramname"><em>result_roots</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ac1e66156081563c054a318323814e0a0">RootsNumb</a></td>          <td class="paramname"><span class="paramname"><em>roots_cnt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>expected_ammount_of_roots</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_roots.html">Roots</a></td>          <td class="paramname"><span class="paramname"><em>input_roots</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>result_file</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function that prints result into file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">struct</td><td><a class="el" href="struct_roots.html" title="Struct for equantion&#39;s roots.">Roots</a> result_roots - program result. </td></tr>
+    <tr><td class="paramname">RootsNumb</td><td>roots_cnt - ammount of roots. </td></tr>
+    <tr><td class="paramname">int</td><td>expected_ammount_of_roots - ammount of roots in answer. </td></tr>
+    <tr><td class="paramname">struct</td><td><a class="el" href="struct_roots.html" title="Struct for equantion&#39;s roots.">Roots</a> input_roots - roots in answer. </td></tr>
+    <tr><td class="paramname">FILE*</td><td>result_file - output file. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0eba33d8678af3e6bffdf11702ca82bf" name="a0eba33d8678af3e6bffdf11702ca82bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eba33d8678af3e6bffdf11702ca82bf">&#9670;&#160;</a></span>ScanFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ScanFile </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_coefs.html">Coefs</a> *</td>          <td class="paramname"><span class="paramname"><em>input_coefs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>expected_ammount_of_roots</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_roots.html">Roots</a> *</td>          <td class="paramname"><span class="paramname"><em>input_roots</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>file</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>result_file</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function that scans input file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">struct</td><td>Coefs* input_coefs - coefs from input. </td></tr>
+    <tr><td class="paramname">int*</td><td>expected_ammount_of_roots - ammount of roots in answer. </td></tr>
+    <tr><td class="paramname">struct</td><td>Roots* input_roots - roots in answer. </td></tr>
+    <tr><td class="paramname">FILE*</td><td>file - input file. </td></tr>
+    <tr><td class="paramname">FILE*</td><td>result_file - output file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int - 0 if there are no strings after this input. 1 if there are strings after this input. </dd></dl>
+
+</div>
+</div>
+<a id="a39a315ccefa7b6ddb100a42714b30015" name="a39a315ccefa7b6ddb100a42714b30015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39a315ccefa7b6ddb100a42714b30015">&#9670;&#160;</a></span>ScanInp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,17 +407,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void ScanInp </td>
           <td>(</td>
-          <td class="paramtype">double *</td>          <td class="paramname"><span class="paramname"><em>coef_a</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">struct <a class="el" href="struct_coefs.html">Coefs</a> *</td>          <td class="paramname"><span class="paramname"><em>input_coefs</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">double *</td>          <td class="paramname"><span class="paramname"><em>coef_b</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *</td>          <td class="paramname"><span class="paramname"><em>coef_c</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -347,8 +425,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="afb56b3df2ed8b4c0aa03b52b69f21e9d" name="afb56b3df2ed8b4c0aa03b52b69f21e9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb56b3df2ed8b4c0aa03b52b69f21e9d">&#9670;&#160;</a></span>Solve_constant_equation()</h2>
+<a id="a3d96ad47311bdea69fd03247adf74b15" name="a3d96ad47311bdea69fd03247adf74b15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d96ad47311bdea69fd03247adf74b15">&#9670;&#160;</a></span>Solve_constant_equation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -356,7 +434,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#ac1e66156081563c054a318323814e0a0">RootsNumb</a> Solve_constant_equation </td>
           <td>(</td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>coef_c</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_coefs.html">Coefs</a></td>          <td class="paramname"><span class="paramname"><em>input_coefs</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -374,8 +452,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a91770ca96e8b0efa1dcd3c909e5ce0f8" name="a91770ca96e8b0efa1dcd3c909e5ce0f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91770ca96e8b0efa1dcd3c909e5ce0f8">&#9670;&#160;</a></span>Solve_linear_equation()</h2>
+<a id="ac4c8de0f92174b3d39d3d2e06405fa28" name="ac4c8de0f92174b3d39d3d2e06405fa28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4c8de0f92174b3d39d3d2e06405fa28">&#9670;&#160;</a></span>Solve_linear_equation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -383,17 +461,12 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#ac1e66156081563c054a318323814e0a0">RootsNumb</a> Solve_linear_equation </td>
           <td>(</td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>coef_b</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_coefs.html">Coefs</a></td>          <td class="paramname"><span class="paramname"><em>input_coefs</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>coef_c</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *</td>          <td class="paramname"><span class="paramname"><em>root_1</em></span>&#160;)</td>
+          <td class="paramtype">struct <a class="el" href="struct_roots.html">Roots</a> *</td>          <td class="paramname"><span class="paramname"><em>result_roots</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -413,8 +486,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad7d7ca16827051295449cb37155bccf0" name="ad7d7ca16827051295449cb37155bccf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7d7ca16827051295449cb37155bccf0">&#9670;&#160;</a></span>Solve_square_equation()</h2>
+<a id="a3041b78edbf1050d6988e101812347ce" name="a3041b78edbf1050d6988e101812347ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3041b78edbf1050d6988e101812347ce">&#9670;&#160;</a></span>Solve_square_equation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -422,27 +495,12 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#ac1e66156081563c054a318323814e0a0">RootsNumb</a> Solve_square_equation </td>
           <td>(</td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>coef_a</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_coefs.html">Coefs</a></td>          <td class="paramname"><span class="paramname"><em>input_coefs</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>coef_b</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>coef_c</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *</td>          <td class="paramname"><span class="paramname"><em>root_1</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *</td>          <td class="paramname"><span class="paramname"><em>root_2</em></span>&#160;)</td>
+          <td class="paramtype">struct <a class="el" href="struct_roots.html">Roots</a> *</td>          <td class="paramname"><span class="paramname"><em>result_roots</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -462,6 +520,44 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a1acef5cd3f2694c64b27e059a1505c44" name="a1acef5cd3f2694c64b27e059a1505c44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1acef5cd3f2694c64b27e059a1505c44">&#9670;&#160;</a></span>WorkWithConsole()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkWithConsole </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function is responsible for dialogue with the user and outputting a solution. </p>
+
+</div>
+</div>
+<a id="a7b888ae90e748f9c30be78b831ee50ff" name="a7b888ae90e748f9c30be78b831ee50ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b888ae90e748f9c30be78b831ee50ff">&#9670;&#160;</a></span>WorkWithFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkWithFile </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function that open files and find solves for every string. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="aa448f27f3adfa048dbaf51a2481a9625" name="aa448f27f3adfa048dbaf51a2481a9625"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa448f27f3adfa048dbaf51a2481a9625">&#9670;&#160;</a></span>very_small_double</h2>
@@ -475,6 +571,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>including header file. </p>
 <p>Very small numb for comparison. </p>
 
 </div>
