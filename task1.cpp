@@ -1,7 +1,7 @@
 /**
  * @brief including header file.
  */
-#include "header.cpp"
+#include "header.h"
 
 
 /**
@@ -161,7 +161,7 @@ void PrintRootsIntoFile(struct Roots result_roots, RootsNumb roots_cnt, int expe
  /**
  * @brief Function that open files and find solves for every string
  */
- void WorkWithFile();
+ //void WorkWithFile();
 
   /**
  * @brief This function is responsible for dialogue with the user and outputting a solution.
@@ -175,6 +175,7 @@ void ScanInp(struct Coefs* input_coefs)
     while(scanf("%lg%lg%lg", &input_coefs->coef_a, &input_coefs->coef_b, &input_coefs->coef_c) != 3 && (inp = getchar()) != EOF)
     {
         printf("Bro, you introduced bullshit. Try again\n");
+
         while(inp != '\n')
         {
             inp = getchar();
@@ -221,6 +222,7 @@ void PrintRootsIntoFile(struct Roots result_roots, RootsNumb roots_cnt, int expe
                 fprintf(result_file, "not correct, equantion has no rules\n");
             }
             break;
+
         case ONE:
             fprintf(result_file, "x1 = %lg - ", input_roots.root_1);
             if(expected_ammount_of_roots == 1 && result_roots.root_1 == input_roots.root_1)
@@ -232,6 +234,7 @@ void PrintRootsIntoFile(struct Roots result_roots, RootsNumb roots_cnt, int expe
                 fprintf(result_file, "not correct, expected root = %lg\n", input_roots.root_1);
             }
             break;
+
         case TWO:
             fprintf(result_file, "x1 = %lg x2 = %lg - " , input_roots.root_1, input_roots.root_2);
             if(expected_ammount_of_roots == 2 && (result_roots.root_1 == input_roots.root_1 && result_roots.root_2 == input_roots.root_2)
@@ -244,6 +247,7 @@ void PrintRootsIntoFile(struct Roots result_roots, RootsNumb roots_cnt, int expe
                 fprintf(result_file, "not correct, expected first root = %lg expected first root = %lg\n", input_roots.root_1, input_roots.root_2);
             }
             break;
+
         case INF:
             fprintf(result_file, "every x - ");
             if(expected_ammount_of_roots == 3)
@@ -255,7 +259,9 @@ void PrintRootsIntoFile(struct Roots result_roots, RootsNumb roots_cnt, int expe
                 fprintf(result_file, "not correct, every x is root\n");
             }
             break;
+
         default:
+            printf("Fuck");
             break;
     }
 }
@@ -263,6 +269,7 @@ void PrintRootsIntoFile(struct Roots result_roots, RootsNumb roots_cnt, int expe
 int ScanFile(struct Coefs* input_coefs, int* expected_ammount_of_roots, struct Roots* input_roots,  FILE* file, FILE* result_file)
 {
     int inp = 0;
+
     if(fscanf(file, "%lg%lg%lg%d%lg%lg", &input_coefs->coef_a, &input_coefs->coef_b, &input_coefs->coef_c, expected_ammount_of_roots, &input_roots->root_1, &input_roots->root_2) == 6)
     {
         fprintf(result_file, "%lg %lg %lg ", input_coefs->coef_a, input_coefs->coef_b, input_coefs->coef_c);
@@ -274,11 +281,11 @@ int ScanFile(struct Coefs* input_coefs, int* expected_ammount_of_roots, struct R
     }
 }
 
-void WorkWithFile()
+void WorkWithFile(FILE* file, FILE* result_file)
 {
 
-    FILE* file = fopen("TestS.txt", "rb");
-    FILE* result_file = fopen("TestsResult.txt", "w");
+    //FILE* file = fopen("TestS.txt", "rb"); //имя файла аргументом
+    //FILE* result_file = fopen("TestsResult.txt", "w");
     int fd = _fileno(result_file);
     _chsize(fd, 0);
     if (file == NULL)
@@ -298,10 +305,6 @@ void WorkWithFile()
 
     while(ScanFile(&input_coefs, &expected_ammount_of_roots, &input_roots, file, result_file))
     {
-
-        double root_1 = 0;
-        double root_2 = 0;
-
         RootsNumb roots_cnt = Find_roots(input_coefs, &result_roots);
         PrintRootsIntoFile(result_roots, roots_cnt, expected_ammount_of_roots, input_roots, result_file);
     }
@@ -398,7 +401,7 @@ RootsNumb Find_roots(Coefs input_coefs, Roots* result_roots)
 
 
 // TODO: add docs (doxygen) +
-// TODO: add unit test
+// TODO: add unit test    +
 // TODO: read argc, argv arg_parse : task.exe -i stdin -o output.txt -t
 // TODO: function pointer (callback)
 
@@ -413,12 +416,7 @@ void WorkWithConsole()
     struct Coefs input_coefs;
     struct Roots result_roots;
 
-
-
-
-
     ScanInp(&input_coefs);
-
 
     RootsNumb roots_cnt = Find_roots(input_coefs, &result_roots);
     PrintRoots(result_roots, roots_cnt);
@@ -428,11 +426,78 @@ void WorkWithConsole()
  /** Main function.
  *  In this function you can choose if you want to work with a file or with a console.
  */
-int main()
+int main(int argc, char* argv[])
 {
+    char* input_flags[2] = {"-i", "-o"};
+
+    if ((argc != 5 && argc != 1 && argc != 2) || (argc == 2 && strcmp(argv[1], "-t") != 0)) {
+        printf("%d %d ", argc, strcmp(argv[1], "-t"));
+        printf("Использование: -t (if you want to work with console) -i <input file> -o <output file>. If you want to work with console you shouldnt write file names.\n");
+        return 1;
+
+    }
+
+
+    if(argc == 1 || (argc == 2 && strcmp(argv[1], "-t") == 0))
+    {
+        WorkWithConsole();
+        return 0;
+    }
+
+
+
+
+    FILE* file = NULL;
+    FILE* result_file = NULL;
+    int cur_flag_id = 0;
+    for(int i = 1; i < argc; i++)
+    {
+        if(i % 2 == 1 && strcmp(argv[i], input_flags[cur_flag_id]) != 0)
+        {
+            printf("%d %d %d ", i, cur_flag_id, strcmp(argv[i], input_flags[cur_flag_id]));
+            printf("Использование: -t (if you want to work with console) -i <input file>-o <output file>. If you want to work with console you shouldnt write file names.\n");
+            return 1;
+        }
+        else if(i == 1 && strcmp(argv[i], input_flags[cur_flag_id]) == 0)
+        {
+            int length = strlen(argv[i + 1]);
+            //printf("%c %c %c %c", argv[i + 1][length - 4], )
+            if(length <= 4 || (argv[i + 1][length - 4] != '.') || (argv[i + 1][length - 3] != 't') || (argv[i + 1][length - 2] != 'x') || (argv[i + 1][length - 1] != 't'))
+            {
+                printf("Input file should be .txt\n");
+                return 1;
+            }
+            file = fopen(argv[i + 1], "r");
+            if(file == NULL)
+            {
+                printf("This file doesnt exist\n");
+                return 1;
+            }
+        }
+        else if(i == 3 && strcmp(argv[i], input_flags[cur_flag_id]) == 0)
+        {
+            int length = strlen(argv[i + 1]);
+            if(length <= 4 || (argv[i + 1][length - 4] != '.') || (argv[i + 1][length - 3] != 't') || (argv[i + 1][length - 2] != 'x') || (argv[i + 1][length - 1] != 't'))
+            {
+                printf("Output file should be .txt\n");
+                return 1;
+            }
+            result_file = fopen(argv[i + 1], "w");
+        }
+        if(i % 2 == 1)
+        {
+            cur_flag_id++;
+        }
+    }
+
+    if(file == NULL)
+    {
+        printf("FIILE IS NULLLLLLLLLLLLL SUKA");
+    }
+
     //This Works With File
 
-    WorkWithFile();
+    WorkWithFile(file, result_file);
 
     //This Works With Console
 

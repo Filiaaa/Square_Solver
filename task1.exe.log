@@ -486,3 +486,773 @@ Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\
 Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x2940 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 01:14:18, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 01:14:31
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x2940 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 01:14:18, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 01:14:31
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x64EC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 01:16:31, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 01:16:43
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x64EC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 01:16:31, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 01:16:43
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x2B28 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 01:17:01, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 01:17:12
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x2B28 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 01:17:01, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 01:17:12
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x1324 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 01:17:37, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 01:18:04
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x1324 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 01:17:37, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 01:18:04
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0xBF0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 01:19:58, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 01:20:10
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0xBF0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 01:19:58, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 01:20:10
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x55E4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 01:21:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 01:21:36
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x55E4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 01:21:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 01:21:36
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x563C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 01:22:34, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 01:22:47
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x563C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 01:22:34, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 01:22:47
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x4368 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 01:25:09, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 01:25:21
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x4368 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 01:25:09, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 01:25:21
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x5DD4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 02:18:18, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 02:22:34
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x5DD4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 02:18:18, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 02:22:34
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x1B28 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 02:57:07, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 02:57:21
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x1B28 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 02:57:07, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 02:57:21
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x59C8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 03:00:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 03:01:07
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0042C6AA. Попытка прочесть данные по адресу 0x00000010 в модуле E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: Cmdre0, Thread: 0x59C8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	e:\projects_and_all_for_programmes\c++\codeblocksded\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 25 2024 03:00:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 25 2024 03:01:07
+
+Run file:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver\task1.exe
+Directory:	E:\Projects_and_all_for_programmes\C++\ProjectsOnC\ILAB\Square_Solver
+
+--------------------------------------------------
