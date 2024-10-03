@@ -1,0 +1,109 @@
+\doxysection{print.\+c}
+\hypertarget{print_8c_source}{}\label{print_8c_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}squareEquantionStructs.h"{}}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}print.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{keywordtype}{void}\ PrintRoots(\mbox{\hyperlink{struct_roots}{Roots}}\ result\_roots,\ RootsNumb\ roots\_cnt)}
+\DoxyCodeLine{00004\ \{}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{keywordflow}{switch}(roots\_cnt)}
+\DoxyCodeLine{00006\ \ \ \ \ \{}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ ZERO:}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Your\ equation\ has\ no\ roots"{}});}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ ONE:}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Your\ equation\ has\ a\ single\ root\ x\ =\ \%lg"{}},\ result\_roots.\mbox{\hyperlink{struct_roots_a7c600f30e04915e91e26faed16ce8f5d}{root\_1}});}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ TWO:}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Your\ equation\ has\ two\ roots\ x1\ =\ \%lg,\ x2\ =\ \%lg"{}},\ result\_roots.\mbox{\hyperlink{struct_roots_a7c600f30e04915e91e26faed16ce8f5d}{root\_1}},\ result\_roots.\mbox{\hyperlink{struct_roots_a1646c93e00ef74484a244e8cd5087825}{root\_2}});}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ INF:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Your\ equation\ has\ an\ infinite\ number\ of\ roots"{}});}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00021\ \ \ \ \ \}}
+\DoxyCodeLine{00022\ \}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{void}\ PrintCorrectionIntoFile(\mbox{\hyperlink{struct_roots}{Roots}}\ input\_roots,\ \textcolor{keywordtype}{int}\ error\_situation,\ FILE*\ result\_file)}
+\DoxyCodeLine{00025\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordflow}{switch}(error\_situation)}
+\DoxyCodeLine{00027\ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 0:}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ fprintf(result\_file,\ \textcolor{stringliteral}{"{}not\ correct,\ equantion\ has\ no\ rules\(\backslash\)n"{}});}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ fprintf(result\_file,\ \textcolor{stringliteral}{"{}not\ correct,\ expected\ root\ =\ \%lg\(\backslash\)n"{}},\ input\_roots.\mbox{\hyperlink{struct_roots_a7c600f30e04915e91e26faed16ce8f5d}{root\_1}});}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 2:}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ fprintf(result\_file,\ \textcolor{stringliteral}{"{}not\ correct,\ expected\ first\ root\ =\ \%lg\ expected\ first\ root\ =\ \%lg\(\backslash\)n"{}},\ input\_roots.\mbox{\hyperlink{struct_roots_a7c600f30e04915e91e26faed16ce8f5d}{root\_1}},\ input\_roots.\mbox{\hyperlink{struct_roots_a1646c93e00ef74484a244e8cd5087825}{root\_2}});}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 3:}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ fprintf(result\_file,\ \textcolor{stringliteral}{"{}not\ correct,\ every\ x\ is\ root\(\backslash\)n"{}});}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Fuck"{}});}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keywordtype}{void}\ PrintRootsIntoFile(\mbox{\hyperlink{struct_roots}{Roots}}\ result\_roots,\ RootsNumb\ roots\_cnt,\ \textcolor{keywordtype}{int}\ expected\_ammount\_of\_roots,}
+\DoxyCodeLine{00048\ \ \mbox{\hyperlink{struct_roots}{Roots}}\ input\_roots,\ FILE*\ result\_file)}
+\DoxyCodeLine{00049\ \{}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{int}\ is\_correct\ =\ 1;}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{int}\ error\_situation\ =\ 0;}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordflow}{switch}(roots\_cnt)}
+\DoxyCodeLine{00053\ \ \ \ \ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ ZERO:}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ fprintf(result\_file,\ \textcolor{stringliteral}{"{}no\ roots\ -\/\ "{}});}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(expected\_ammount\_of\_roots\ !=\ 0)}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ is\_correct\ =\ 0;}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ error\_situation\ =\ 0;}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ ONE:}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ fprintf(result\_file,\ \textcolor{stringliteral}{"{}x1\ =\ \%lg\ -\/\ "{}},\ input\_roots.\mbox{\hyperlink{struct_roots_a7c600f30e04915e91e26faed16ce8f5d}{root\_1}});}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(expected\_ammount\_of\_roots\ !=\ 1\ ||\ result\_roots.\mbox{\hyperlink{struct_roots_a7c600f30e04915e91e26faed16ce8f5d}{root\_1}}\ !=\ input\_roots.\mbox{\hyperlink{struct_roots_a7c600f30e04915e91e26faed16ce8f5d}{root\_1}})}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ is\_correct\ =\ 0;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ error\_situation\ =\ 1;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ TWO:}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ fprintf(result\_file,\ \textcolor{stringliteral}{"{}x1\ =\ \%lg\ x2\ =\ \%lg\ -\/\ "{}}\ ,\ input\_roots.\mbox{\hyperlink{struct_roots_a7c600f30e04915e91e26faed16ce8f5d}{root\_1}},\ input\_roots.\mbox{\hyperlink{struct_roots_a1646c93e00ef74484a244e8cd5087825}{root\_2}});}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(expected\_ammount\_of\_roots\ !=\ 2\ ||\ (result\_roots.\mbox{\hyperlink{struct_roots_a7c600f30e04915e91e26faed16ce8f5d}{root\_1}}\ !=\ input\_roots.\mbox{\hyperlink{struct_roots_a7c600f30e04915e91e26faed16ce8f5d}{root\_1}}\ ||\ result\_roots.\mbox{\hyperlink{struct_roots_a1646c93e00ef74484a244e8cd5087825}{root\_2}}\ !=\ input\_roots.\mbox{\hyperlink{struct_roots_a1646c93e00ef74484a244e8cd5087825}{root\_2}})}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \&\&\ (result\_roots.\mbox{\hyperlink{struct_roots_a7c600f30e04915e91e26faed16ce8f5d}{root\_1}}\ !=\ input\_roots.\mbox{\hyperlink{struct_roots_a1646c93e00ef74484a244e8cd5087825}{root\_2}}\ ||\ result\_roots.\mbox{\hyperlink{struct_roots_a1646c93e00ef74484a244e8cd5087825}{root\_2}}\ !=\ input\_roots.\mbox{\hyperlink{struct_roots_a7c600f30e04915e91e26faed16ce8f5d}{root\_1}}))}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ is\_correct\ =\ 0;}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ error\_situation\ =\ 2;}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ INF:}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ fprintf(result\_file,\ \textcolor{stringliteral}{"{}every\ x\ -\/\ "{}});}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(expected\_ammount\_of\_roots\ !=\ 3)}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ is\_correct\ =\ 0;}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ error\_situation\ =\ 3;}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Fuck"{}});}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \}}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordflow}{if}(is\_correct\ ==\ 1)}
+\DoxyCodeLine{00097\ \ \ \ \ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ fprintf(result\_file,\ \textcolor{stringliteral}{"{}correct\(\backslash\)n"{}});}
+\DoxyCodeLine{00099\ \ \ \ \ \}}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00101\ \ \ \ \ \{}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ PrintCorrectionIntoFile(input\_roots,\ error\_situation,\ result\_file);}
+\DoxyCodeLine{00103\ \ \ \ \ \}}
+\DoxyCodeLine{00104\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,37 @@
+\doxysection{scan.\+c}
+\hypertarget{scan_8c_source}{}\label{scan_8c_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}squareEquantionStructs.h"{}}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}header.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keywordtype}{void}\ ScanInp(\mbox{\hyperlink{struct_coefs}{Coefs}}*\ input\_coefs)}
+\DoxyCodeLine{00005\ \{}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keywordtype}{int}\ inp\ =\ 0;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordflow}{while}(scanf(\textcolor{stringliteral}{"{}\%lg\%lg\%lg"{}},\ \&input\_coefs-\/>\mbox{\hyperlink{struct_coefs_a95b3a5307fd4522f6f96975038258b90}{coef\_a}},\ \&input\_coefs-\/>\mbox{\hyperlink{struct_coefs_a19cc7bb3c332109b4798643fdf69d8bf}{coef\_b}},\ \&input\_coefs-\/>\mbox{\hyperlink{struct_coefs_a3b7ea099be264359832350df340f4000}{coef\_c}})\ !=\ 3\ \&\&\ (inp\ =\ getchar())\ !=\ -\/1)}
+\DoxyCodeLine{00009\ \ \ \ \ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Bro,\ you\ entered\ bullshit.\ Try\ again\(\backslash\)n"{}});}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(inp\ !=\ \textcolor{charliteral}{'\(\backslash\)n'})}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ inp\ =\ getchar();}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00016\ \ \ \ \ \}}
+\DoxyCodeLine{00017\ \}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keywordtype}{int}\ ScanFile(\mbox{\hyperlink{struct_coefs}{Coefs}}*\ input\_coefs,\ \textcolor{keywordtype}{int}*\ expected\_ammount\_of\_roots,\ \mbox{\hyperlink{struct_roots}{Roots}}*\ input\_roots,\ \ FILE*\ file,\ FILE*\ result\_file)}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ inp\ =\ 0;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordflow}{if}(fscanf(file,\ \textcolor{stringliteral}{"{}a:\ \%lg\ b:\ \%lg\ c:\ \%lg\ ammount:\ \%d\ x1:\ \%lg\ x2:\ \%lg\(\backslash\)n"{}},\ \&input\_coefs-\/>\mbox{\hyperlink{struct_coefs_a95b3a5307fd4522f6f96975038258b90}{coef\_a}},\ \&input\_coefs-\/>\mbox{\hyperlink{struct_coefs_a19cc7bb3c332109b4798643fdf69d8bf}{coef\_b}},\ \&input\_coefs-\/>\mbox{\hyperlink{struct_coefs_a3b7ea099be264359832350df340f4000}{coef\_c}},\ expected\_ammount\_of\_roots,\ \&input\_roots-\/>\mbox{\hyperlink{struct_roots_a7c600f30e04915e91e26faed16ce8f5d}{root\_1}},\ \&input\_roots-\/>\mbox{\hyperlink{struct_roots_a1646c93e00ef74484a244e8cd5087825}{root\_2}})\ ==\ 6)}
+\DoxyCodeLine{00024\ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ fprintf(result\_file,\ \textcolor{stringliteral}{"{}\%lg\ \%lg\ \%lg\ "{}},\ input\_coefs-\/>\mbox{\hyperlink{struct_coefs_a95b3a5307fd4522f6f96975038258b90}{coef\_a}},\ input\_coefs-\/>\mbox{\hyperlink{struct_coefs_a19cc7bb3c332109b4798643fdf69d8bf}{coef\_b}},\ input\_coefs-\/>\mbox{\hyperlink{struct_coefs_a3b7ea099be264359832350df340f4000}{coef\_c}});}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00029\ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00031\ \ \ \ \ \}}
+\DoxyCodeLine{00032\ \}}
+
+\end{DoxyCode}

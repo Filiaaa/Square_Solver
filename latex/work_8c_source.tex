@@ -1,0 +1,51 @@
+\doxysection{work.\+c}
+\hypertarget{work_8c_source}{}\label{work_8c_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}squareEquantionStructs.h"{}}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}print.c"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}header.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}equantions.c"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}scan.c"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}header.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ greeting\_string\ =\ \textcolor{stringliteral}{"{}This\ program\ finds\ solutions\ to\ a\ quadratic\ equation\ of\ the\ form\ ax\string^2\ +\ bx\ +\ c\ =\ 0\(\backslash\)nEnter\ coefficients\ a,\ b,\ c\ separated\ by\ spaces\(\backslash\)n"{}};}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keywordtype}{void}\ WorkWithFile(FILE*\ file,\ FILE*\ result\_file)}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{struct_coefs}{Coefs}}\ input\_coefs\ =\ \{NAN,\ NAN,\ NAN\};}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{struct_roots}{Roots}}\ result\_roots\ =\ \{NAN,\ NAN\};}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{struct_roots}{Roots}}\ input\_roots\ =\ \{NAN,\ NAN\};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ expected\_ammount\_of\_roots\ =\ NAN;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{double}\ expected\_root1\ =\ NAN;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{double}\ expected\_root2\ =\ NAN;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordflow}{while}(ScanFile(\&input\_coefs,\ \&expected\_ammount\_of\_roots,\ \&input\_roots,\ file,\ result\_file))}
+\DoxyCodeLine{00024\ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ RootsNumb\ roots\_cnt\ =\ FindRoots(input\_coefs,\ \&result\_roots);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ PrintRootsIntoFile(result\_roots,\ roots\_cnt,\ expected\_ammount\_of\_roots,\ input\_roots,\ result\_file);}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+\DoxyCodeLine{00028\ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keywordtype}{void}\ WorkWithConsole()}
+\DoxyCodeLine{00035\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\%s"{}},\ greeting\_string);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{struct_coefs}{Coefs}}\ input\_coefs;}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{struct_roots}{Roots}}\ result\_roots;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ ScanInp(\&input\_coefs);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ RootsNumb\ roots\_cnt\ =\ FindRoots(input\_coefs,\ \&result\_roots);}
+\DoxyCodeLine{00044\ \ \ \ \ PrintRoots(result\_roots,\ roots\_cnt);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \}}
+
+\end{DoxyCode}

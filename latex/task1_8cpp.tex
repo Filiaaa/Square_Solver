@@ -1,96 +1,47 @@
 \doxysection{task1.\+cpp File Reference}
 \hypertarget{task1_8cpp}{}\label{task1_8cpp}\index{task1.cpp@{task1.cpp}}
-{\ttfamily \#include "{}header.\+cpp"{}}\newline
-\doxysubsubsection*{Classes}
-\begin{DoxyCompactItemize}
-\item 
-struct \mbox{\hyperlink{struct_coefs}{Coefs}}
-\begin{DoxyCompactList}\small\item\em Struct for equantion\textquotesingle{}s coefs. \end{DoxyCompactList}\item 
-struct \mbox{\hyperlink{struct_roots}{Roots}}
-\begin{DoxyCompactList}\small\item\em Struct for equantion\textquotesingle{}s roots. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Enumerations}
-\begin{DoxyCompactItemize}
-\item 
-enum \mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} \+: int \{ \mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0ae117e3533122c80b262257b49b21cddf}{ZERO}} = 0
-, \mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0a7a725f13af144bdef532d0389ba75e0d}{ONE}} = 1
-, \mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0a0e793500a63ffa575b9b712ca3bc9851}{TWO}} = 2
-, \mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0a2e6059d72d8fde88f3127eb147e4eff8}{INF}} = 3
- \}
-\begin{DoxyCompactList}\small\item\em Enumeration for the ammount of roots. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\ttfamily \#include "{}header.\+h"{}}\newline
+{\ttfamily \#include "{}square\+Equantion\+Structs.\+h"{}}\newline
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 double \mbox{\hyperlink{task1_8cpp_a74914f5f6a16f051e3026b1c7560fff2}{Find\+\_\+discriminant}} (\mbox{\hyperlink{struct_coefs}{Coefs}} input\+\_\+coefs)
 \begin{DoxyCompactList}\small\item\em Function for finding descriminant. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} \mbox{\hyperlink{task1_8cpp_aca224bf1f4202adc1e294681ec095f90}{Find\+\_\+roots}} (\mbox{\hyperlink{struct_coefs}{Coefs}} input\+\_\+coefs, \mbox{\hyperlink{struct_roots}{Roots}} \texorpdfstring{$\ast$}{*}result\+\_\+roots)
+\mbox{\hyperlink{square_equantion_structs_8h_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} \mbox{\hyperlink{task1_8cpp_aca224bf1f4202adc1e294681ec095f90}{Find\+\_\+roots}} (\mbox{\hyperlink{struct_coefs}{Coefs}} input\+\_\+coefs, \mbox{\hyperlink{struct_roots}{Roots}} \texorpdfstring{$\ast$}{*}result\+\_\+roots)
 \begin{DoxyCompactList}\small\item\em Function that find roots. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} \mbox{\hyperlink{task1_8cpp_a3041b78edbf1050d6988e101812347ce}{Solve\+\_\+square\+\_\+equation}} (\mbox{\hyperlink{struct_coefs}{Coefs}} input\+\_\+coefs, struct \mbox{\hyperlink{struct_roots}{Roots}} \texorpdfstring{$\ast$}{*}result\+\_\+roots)
+\mbox{\hyperlink{square_equantion_structs_8h_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} \mbox{\hyperlink{task1_8cpp_a3041b78edbf1050d6988e101812347ce}{Solve\+\_\+square\+\_\+equation}} (\mbox{\hyperlink{struct_coefs}{Coefs}} input\+\_\+coefs, struct \mbox{\hyperlink{struct_roots}{Roots}} \texorpdfstring{$\ast$}{*}result\+\_\+roots)
 \begin{DoxyCompactList}\small\item\em Function that solves square equation. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} \mbox{\hyperlink{task1_8cpp_ac4c8de0f92174b3d39d3d2e06405fa28}{Solve\+\_\+linear\+\_\+equation}} (\mbox{\hyperlink{struct_coefs}{Coefs}} input\+\_\+coefs, struct \mbox{\hyperlink{struct_roots}{Roots}} \texorpdfstring{$\ast$}{*}result\+\_\+roots)
+\mbox{\hyperlink{square_equantion_structs_8h_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} \mbox{\hyperlink{task1_8cpp_ac4c8de0f92174b3d39d3d2e06405fa28}{Solve\+\_\+linear\+\_\+equation}} (\mbox{\hyperlink{struct_coefs}{Coefs}} input\+\_\+coefs, struct \mbox{\hyperlink{struct_roots}{Roots}} \texorpdfstring{$\ast$}{*}result\+\_\+roots)
 \begin{DoxyCompactList}\small\item\em Function that solves linear equation. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} \mbox{\hyperlink{task1_8cpp_a3d96ad47311bdea69fd03247adf74b15}{Solve\+\_\+constant\+\_\+equation}} (\mbox{\hyperlink{struct_coefs}{Coefs}} input\+\_\+coefs)
+\mbox{\hyperlink{square_equantion_structs_8h_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} \mbox{\hyperlink{task1_8cpp_a3d96ad47311bdea69fd03247adf74b15}{Solve\+\_\+constant\+\_\+equation}} (\mbox{\hyperlink{struct_coefs}{Coefs}} input\+\_\+coefs)
 \begin{DoxyCompactList}\small\item\em Function that solves equation of the form c = 0. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{task1_8cpp_aa315ae422daf596502f6eb1d4dcfa507}{Print\+Roots}} (struct \mbox{\hyperlink{struct_roots}{Roots}} result\+\_\+roots, \mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} roots\+\_\+cnt)
+void \mbox{\hyperlink{task1_8cpp_a5d6a0b150c2ab8e45305c787a1cc73cf}{Print\+\_\+\+Roots}} (struct \mbox{\hyperlink{struct_roots}{Roots}} result\+\_\+roots, \mbox{\hyperlink{square_equantion_structs_8h_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} roots\+\_\+cnt)
 \begin{DoxyCompactList}\small\item\em Function that prints roots. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{task1_8cpp_a39a315ccefa7b6ddb100a42714b30015}{Scan\+Inp}} (struct \mbox{\hyperlink{struct_coefs}{Coefs}} \texorpdfstring{$\ast$}{*}input\+\_\+coefs)
+void \mbox{\hyperlink{task1_8cpp_a90e6984e684fb56a27a214873a927a3f}{Scan\+\_\+\+Inp}} (struct \mbox{\hyperlink{struct_coefs}{Coefs}} \texorpdfstring{$\ast$}{*}input\+\_\+coefs)
 \begin{DoxyCompactList}\small\item\em Function that scans input. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{task1_8cpp_a4abeb90404b1bbe040ccc46655c67c2f}{Print\+Roots\+Into\+File}} (struct \mbox{\hyperlink{struct_roots}{Roots}} result\+\_\+roots, \mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} roots\+\_\+cnt, int expected\+\_\+ammount\+\_\+of\+\_\+roots, struct \mbox{\hyperlink{struct_roots}{Roots}} input\+\_\+roots, FILE \texorpdfstring{$\ast$}{*}result\+\_\+file)
+void \mbox{\hyperlink{task1_8cpp_a952510969c8429050dde323624a10fb2}{Print\+\_\+\+Roots\+\_\+\+Into\+\_\+\+File}} (struct \mbox{\hyperlink{struct_roots}{Roots}} result\+\_\+roots, \mbox{\hyperlink{square_equantion_structs_8h_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} roots\+\_\+cnt, int expected\+\_\+ammount\+\_\+of\+\_\+roots, struct \mbox{\hyperlink{struct_roots}{Roots}} input\+\_\+roots, FILE \texorpdfstring{$\ast$}{*}result\+\_\+file)
 \begin{DoxyCompactList}\small\item\em Function that prints result into file. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{task1_8cpp_a0eba33d8678af3e6bffdf11702ca82bf}{Scan\+File}} (struct \mbox{\hyperlink{struct_coefs}{Coefs}} \texorpdfstring{$\ast$}{*}input\+\_\+coefs, int \texorpdfstring{$\ast$}{*}expected\+\_\+ammount\+\_\+of\+\_\+roots, struct \mbox{\hyperlink{struct_roots}{Roots}} \texorpdfstring{$\ast$}{*}input\+\_\+roots, FILE \texorpdfstring{$\ast$}{*}file, FILE \texorpdfstring{$\ast$}{*}result\+\_\+file)
+int \mbox{\hyperlink{task1_8cpp_ad0293b2f42d3e3f5ef3216e50d697b4b}{Scan\+\_\+\+File}} (struct \mbox{\hyperlink{struct_coefs}{Coefs}} \texorpdfstring{$\ast$}{*}input\+\_\+coefs, int \texorpdfstring{$\ast$}{*}expected\+\_\+ammount\+\_\+of\+\_\+roots, struct \mbox{\hyperlink{struct_roots}{Roots}} \texorpdfstring{$\ast$}{*}input\+\_\+roots, FILE \texorpdfstring{$\ast$}{*}file, FILE \texorpdfstring{$\ast$}{*}result\+\_\+file)
 \begin{DoxyCompactList}\small\item\em Function that scans input file. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{task1_8cpp_a7b888ae90e748f9c30be78b831ee50ff}{Work\+With\+File}} ()
-\begin{DoxyCompactList}\small\item\em Function that open files and find solves for every string. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{task1_8cpp_a1acef5cd3f2694c64b27e059a1505c44}{Work\+With\+Console}} ()
 \begin{DoxyCompactList}\small\item\em This function is responsible for dialogue with the user and outputting a solution. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{task1_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+void \mbox{\hyperlink{task1_8cpp_a30c361b3f607e7f140422b97e7ead155}{Work\+\_\+\+With\+\_\+\+File}} (FILE \texorpdfstring{$\ast$}{*}file, FILE \texorpdfstring{$\ast$}{*}result\+\_\+file)
+\begin{DoxyCompactList}\small\item\em Function that open files and find solves for every string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{task1_8cpp_ad71b1962511cd3e5209fce3c7d2fe82b}{Work\+\_\+\+With\+\_\+\+Parser}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Function that parse input string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{task1_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{task1_8cpp_aa4c8770c24ddf0bb264e7e576071c255}{Work\+\_\+\+With\+\_\+\+Console}} ()
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
 const double \mbox{\hyperlink{task1_8cpp_aa448f27f3adfa048dbaf51a2481a9625}{very\+\_\+small\+\_\+double}} = 1e-\/8
-\begin{DoxyCompactList}\small\item\em including header file. \end{DoxyCompactList}\end{DoxyCompactItemize}
-
-
-\doxysubsection{Enumeration Type Documentation}
-\Hypertarget{task1_8cpp_ac1e66156081563c054a318323814e0a0}\index{task1.cpp@{task1.cpp}!RootsNumb@{RootsNumb}}
-\index{RootsNumb@{RootsNumb}!task1.cpp@{task1.cpp}}
-\doxysubsubsection{\texorpdfstring{RootsNumb}{RootsNumb}}
-{\footnotesize\ttfamily \label{task1_8cpp_ac1e66156081563c054a318323814e0a0} 
-enum \mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} \+: int}
-
-
-
-Enumeration for the ammount of roots. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em ZERO} & -\/ If there are no roots. \\
-\hline
-{\em ONE} & -\/ If there is only one root. \\
-\hline
-{\em TWO} & -\/ If there are two roots. \\
-\hline
-{\em INF} & -\/ If every x is root for the equation. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyEnumFields}[2]{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{ZERO@{ZERO}!task1.cpp@{task1.cpp}}\index{task1.cpp@{task1.cpp}!ZERO@{ZERO}}}\Hypertarget{task1_8cpp_ac1e66156081563c054a318323814e0a0ae117e3533122c80b262257b49b21cddf}\label{task1_8cpp_ac1e66156081563c054a318323814e0a0} 
-ZERO&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{ONE@{ONE}!task1.cpp@{task1.cpp}}\index{task1.cpp@{task1.cpp}!ONE@{ONE}}}\Hypertarget{task1_8cpp_ac1e66156081563c054a318323814e0a0a7a725f13af144bdef532d0389ba75e0d}\label{task1_8cpp_ac1e66156081563c054a318323814e0a0} 
-ONE&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{TWO@{TWO}!task1.cpp@{task1.cpp}}\index{task1.cpp@{task1.cpp}!TWO@{TWO}}}\Hypertarget{task1_8cpp_ac1e66156081563c054a318323814e0a0a0e793500a63ffa575b9b712ca3bc9851}\label{task1_8cpp_ac1e66156081563c054a318323814e0a0} 
-TWO&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{INF@{INF}!task1.cpp@{task1.cpp}}\index{task1.cpp@{task1.cpp}!INF@{INF}}}\Hypertarget{task1_8cpp_ac1e66156081563c054a318323814e0a0a2e6059d72d8fde88f3127eb147e4eff8}\label{task1_8cpp_ac1e66156081563c054a318323814e0a0} 
-INF&\\
-\hline
-
-\end{DoxyEnumFields}
+\begin{DoxyCompactList}\small\item\em including header file. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{task1_8cpp_a50d433015257595fb0da3ddc0a7f0c94}{using\+\_\+warning\+\_\+string}} = "{}Using\+: -\/t (if you want to work with console) -\/i $<$input file$>$-\/o $<$output file$>$. If you want to work with console you shouldnt write file names.\textbackslash{}n"{}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{task1_8cpp_a272bd60471e98ec90049d54c1382493b}{greeting\+\_\+string}} = "{}This program finds solutions to a quadratic equation of the form ax\texorpdfstring{$^\wedge$}{\string^}2 + bx + c = 0\textbackslash{}n\+Enter coefficients a, b, c separated by spaces\textbackslash{}n"{}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
@@ -120,7 +71,7 @@ double -\/ discriminant
 \index{Find\_roots@{Find\_roots}!task1.cpp@{task1.cpp}}
 \doxysubsubsection{\texorpdfstring{Find\_roots()}{Find\_roots()}}
 {\footnotesize\ttfamily \label{task1_8cpp_aca224bf1f4202adc1e294681ec095f90} 
-\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} Find\+\_\+roots (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coefs}{Coefs}}}]{input\+\_\+coefs}{, }\item[{\mbox{\hyperlink{struct_roots}{Roots}} \texorpdfstring{$\ast$}{*}}]{result\+\_\+roots}{}\end{DoxyParamCaption})}
+\mbox{\hyperlink{square_equantion_structs_8h_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} Find\+\_\+roots (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coefs}{Coefs}}}]{input\+\_\+coefs}{, }\item[{\mbox{\hyperlink{struct_roots}{Roots}} \texorpdfstring{$\ast$}{*}}]{result\+\_\+roots}{}\end{DoxyParamCaption})}
 
 
 
@@ -142,17 +93,17 @@ Function that find roots.
 \begin{DoxyReturn}{Returns}
 Roots\+Numb -\/ ammount of roots 
 \end{DoxyReturn}
-\Hypertarget{task1_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{task1.cpp@{task1.cpp}!main@{main}}
+\Hypertarget{task1_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\index{task1.cpp@{task1.cpp}!main@{main}}
 \index{main@{main}!task1.cpp@{task1.cpp}}
 \doxysubsubsection{\texorpdfstring{main()}{main()}}
-{\footnotesize\ttfamily \label{task1_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
-int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{task1_8cpp_a0ddf1224851353fc92bfbff6f499fa97} 
+int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
 
-Main function. In this function you can choose if you want to work with a file or with a console. \Hypertarget{task1_8cpp_aa315ae422daf596502f6eb1d4dcfa507}\index{task1.cpp@{task1.cpp}!PrintRoots@{PrintRoots}}
-\index{PrintRoots@{PrintRoots}!task1.cpp@{task1.cpp}}
-\doxysubsubsection{\texorpdfstring{PrintRoots()}{PrintRoots()}}
-{\footnotesize\ttfamily \label{task1_8cpp_aa315ae422daf596502f6eb1d4dcfa507} 
-void Print\+Roots (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_roots}{Roots}}}]{result\+\_\+roots}{, }\item[{\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}}}]{roots\+\_\+cnt}{}\end{DoxyParamCaption})}
+Main function. In this function you can choose if you want to work with a file or with a console. \Hypertarget{task1_8cpp_a5d6a0b150c2ab8e45305c787a1cc73cf}\index{task1.cpp@{task1.cpp}!Print\_Roots@{Print\_Roots}}
+\index{Print\_Roots@{Print\_Roots}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{Print\_Roots()}{Print\_Roots()}}
+{\footnotesize\ttfamily \label{task1_8cpp_a5d6a0b150c2ab8e45305c787a1cc73cf} 
+void Print\+\_\+\+Roots (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_roots}{Roots}}}]{result\+\_\+roots}{, }\item[{\mbox{\hyperlink{square_equantion_structs_8h_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}}}]{roots\+\_\+cnt}{}\end{DoxyParamCaption})}
 
 
 
@@ -167,15 +118,17 @@ Function that prints roots.
 {\em Roots\+Numb} & roots\+\_\+cnt -\/ ammount of roots. \\
 \hline
 \end{DoxyParams}
-\Hypertarget{task1_8cpp_a4abeb90404b1bbe040ccc46655c67c2f}\index{task1.cpp@{task1.cpp}!PrintRootsIntoFile@{PrintRootsIntoFile}}
-\index{PrintRootsIntoFile@{PrintRootsIntoFile}!task1.cpp@{task1.cpp}}
-\doxysubsubsection{\texorpdfstring{PrintRootsIntoFile()}{PrintRootsIntoFile()}}
-{\footnotesize\ttfamily \label{task1_8cpp_a4abeb90404b1bbe040ccc46655c67c2f} 
-void Print\+Roots\+Into\+File (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_roots}{Roots}}}]{result\+\_\+roots}{, }\item[{\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}}}]{roots\+\_\+cnt}{, }\item[{int}]{expected\+\_\+ammount\+\_\+of\+\_\+roots}{, }\item[{struct \mbox{\hyperlink{struct_roots}{Roots}}}]{input\+\_\+roots}{, }\item[{FILE \texorpdfstring{$\ast$}{*}}]{result\+\_\+file}{}\end{DoxyParamCaption})}
+\Hypertarget{task1_8cpp_a952510969c8429050dde323624a10fb2}\index{task1.cpp@{task1.cpp}!Print\_Roots\_Into\_File@{Print\_Roots\_Into\_File}}
+\index{Print\_Roots\_Into\_File@{Print\_Roots\_Into\_File}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{Print\_Roots\_Into\_File()}{Print\_Roots\_Into\_File()}}
+{\footnotesize\ttfamily \label{task1_8cpp_a952510969c8429050dde323624a10fb2} 
+void Print\+\_\+\+Roots\+\_\+\+Into\+\_\+\+File (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_roots}{Roots}}}]{result\+\_\+roots}{, }\item[{\mbox{\hyperlink{square_equantion_structs_8h_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}}}]{roots\+\_\+cnt}{, }\item[{int}]{expected\+\_\+ammount\+\_\+of\+\_\+roots}{, }\item[{struct \mbox{\hyperlink{struct_roots}{Roots}}}]{input\+\_\+roots}{, }\item[{FILE \texorpdfstring{$\ast$}{*}}]{result\+\_\+file}{}\end{DoxyParamCaption})}
 
 
 
 Function that prints result into file. 
+
+Function that prints roots into result file.
 
 
 \begin{DoxyParams}{Parameters}
@@ -187,14 +140,24 @@ Function that prints result into file.
 \hline
 {\em struct} & \doxylink{struct_roots}{Roots} input\+\_\+roots -\/ roots in answer. \\
 \hline
+{\em FILE\texorpdfstring{$\ast$}{*}} & result\+\_\+file -\/ output file.\\
+\hline
+{\em struct} & \doxylink{struct_roots}{Roots} result\+\_\+roots -\/ result. \\
+\hline
+{\em Roots\+Numb} & roots\+\_\+cnt -\/ ammount of roots. \\
+\hline
+{\em int} & expected\+\_\+ammount\+\_\+of\+\_\+roots -\/ ammount of roots in answer. \\
+\hline
+{\em struct} & \doxylink{struct_roots}{Roots} input\+\_\+roots -\/ roots in answer. \\
+\hline
 {\em FILE\texorpdfstring{$\ast$}{*}} & result\+\_\+file -\/ output file. \\
 \hline
 \end{DoxyParams}
-\Hypertarget{task1_8cpp_a0eba33d8678af3e6bffdf11702ca82bf}\index{task1.cpp@{task1.cpp}!ScanFile@{ScanFile}}
-\index{ScanFile@{ScanFile}!task1.cpp@{task1.cpp}}
-\doxysubsubsection{\texorpdfstring{ScanFile()}{ScanFile()}}
-{\footnotesize\ttfamily \label{task1_8cpp_a0eba33d8678af3e6bffdf11702ca82bf} 
-int Scan\+File (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_coefs}{Coefs}} \texorpdfstring{$\ast$}{*}}]{input\+\_\+coefs}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{expected\+\_\+ammount\+\_\+of\+\_\+roots}{, }\item[{struct \mbox{\hyperlink{struct_roots}{Roots}} \texorpdfstring{$\ast$}{*}}]{input\+\_\+roots}{, }\item[{FILE \texorpdfstring{$\ast$}{*}}]{file}{, }\item[{FILE \texorpdfstring{$\ast$}{*}}]{result\+\_\+file}{}\end{DoxyParamCaption})}
+\Hypertarget{task1_8cpp_ad0293b2f42d3e3f5ef3216e50d697b4b}\index{task1.cpp@{task1.cpp}!Scan\_File@{Scan\_File}}
+\index{Scan\_File@{Scan\_File}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{Scan\_File()}{Scan\_File()}}
+{\footnotesize\ttfamily \label{task1_8cpp_ad0293b2f42d3e3f5ef3216e50d697b4b} 
+int Scan\+\_\+\+File (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_coefs}{Coefs}} \texorpdfstring{$\ast$}{*}}]{input\+\_\+coefs}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{expected\+\_\+ammount\+\_\+of\+\_\+roots}{, }\item[{struct \mbox{\hyperlink{struct_roots}{Roots}} \texorpdfstring{$\ast$}{*}}]{input\+\_\+roots}{, }\item[{FILE \texorpdfstring{$\ast$}{*}}]{file}{, }\item[{FILE \texorpdfstring{$\ast$}{*}}]{result\+\_\+file}{}\end{DoxyParamCaption})}
 
 
 
@@ -216,11 +179,11 @@ Function that scans input file.
 \begin{DoxyReturn}{Returns}
 int -\/ 0 if there are no strings after this input. 1 if there are strings after this input. 
 \end{DoxyReturn}
-\Hypertarget{task1_8cpp_a39a315ccefa7b6ddb100a42714b30015}\index{task1.cpp@{task1.cpp}!ScanInp@{ScanInp}}
-\index{ScanInp@{ScanInp}!task1.cpp@{task1.cpp}}
-\doxysubsubsection{\texorpdfstring{ScanInp()}{ScanInp()}}
-{\footnotesize\ttfamily \label{task1_8cpp_a39a315ccefa7b6ddb100a42714b30015} 
-void Scan\+Inp (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_coefs}{Coefs}} \texorpdfstring{$\ast$}{*}}]{input\+\_\+coefs}{}\end{DoxyParamCaption})}
+\Hypertarget{task1_8cpp_a90e6984e684fb56a27a214873a927a3f}\index{task1.cpp@{task1.cpp}!Scan\_Inp@{Scan\_Inp}}
+\index{Scan\_Inp@{Scan\_Inp}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{Scan\_Inp()}{Scan\_Inp()}}
+{\footnotesize\ttfamily \label{task1_8cpp_a90e6984e684fb56a27a214873a927a3f} 
+void Scan\+\_\+\+Inp (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_coefs}{Coefs}} \texorpdfstring{$\ast$}{*}}]{input\+\_\+coefs}{}\end{DoxyParamCaption})}
 
 
 
@@ -239,7 +202,7 @@ Function that scans input.
 \index{Solve\_constant\_equation@{Solve\_constant\_equation}!task1.cpp@{task1.cpp}}
 \doxysubsubsection{\texorpdfstring{Solve\_constant\_equation()}{Solve\_constant\_equation()}}
 {\footnotesize\ttfamily \label{task1_8cpp_a3d96ad47311bdea69fd03247adf74b15} 
-\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} Solve\+\_\+constant\+\_\+equation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coefs}{Coefs}}}]{input\+\_\+coefs}{}\end{DoxyParamCaption})}
+\mbox{\hyperlink{square_equantion_structs_8h_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} Solve\+\_\+constant\+\_\+equation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coefs}{Coefs}}}]{input\+\_\+coefs}{}\end{DoxyParamCaption})}
 
 
 
@@ -259,7 +222,7 @@ Roots\+Numb -\/ ammount of roots
 \index{Solve\_linear\_equation@{Solve\_linear\_equation}!task1.cpp@{task1.cpp}}
 \doxysubsubsection{\texorpdfstring{Solve\_linear\_equation()}{Solve\_linear\_equation()}}
 {\footnotesize\ttfamily \label{task1_8cpp_ac4c8de0f92174b3d39d3d2e06405fa28} 
-\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} Solve\+\_\+linear\+\_\+equation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coefs}{Coefs}}}]{input\+\_\+coefs}{, }\item[{struct \mbox{\hyperlink{struct_roots}{Roots}} \texorpdfstring{$\ast$}{*}}]{result\+\_\+roots}{}\end{DoxyParamCaption})}
+\mbox{\hyperlink{square_equantion_structs_8h_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} Solve\+\_\+linear\+\_\+equation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coefs}{Coefs}}}]{input\+\_\+coefs}{, }\item[{struct \mbox{\hyperlink{struct_roots}{Roots}} \texorpdfstring{$\ast$}{*}}]{result\+\_\+roots}{}\end{DoxyParamCaption})}
 
 
 
@@ -285,7 +248,7 @@ Roots\+Numb -\/ ammount of roots
 \index{Solve\_square\_equation@{Solve\_square\_equation}!task1.cpp@{task1.cpp}}
 \doxysubsubsection{\texorpdfstring{Solve\_square\_equation()}{Solve\_square\_equation()}}
 {\footnotesize\ttfamily \label{task1_8cpp_a3041b78edbf1050d6988e101812347ce} 
-\mbox{\hyperlink{task1_8cpp_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} Solve\+\_\+square\+\_\+equation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coefs}{Coefs}}}]{input\+\_\+coefs}{, }\item[{struct \mbox{\hyperlink{struct_roots}{Roots}} \texorpdfstring{$\ast$}{*}}]{result\+\_\+roots}{}\end{DoxyParamCaption})}
+\mbox{\hyperlink{square_equantion_structs_8h_ac1e66156081563c054a318323814e0a0}{Roots\+Numb}} Solve\+\_\+square\+\_\+equation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coefs}{Coefs}}}]{input\+\_\+coefs}{, }\item[{struct \mbox{\hyperlink{struct_roots}{Roots}} \texorpdfstring{$\ast$}{*}}]{result\+\_\+roots}{}\end{DoxyParamCaption})}
 
 
 
@@ -307,6 +270,46 @@ Function that solves square equation.
 \begin{DoxyReturn}{Returns}
 Roots\+Numb -\/ ammount of roots 
 \end{DoxyReturn}
+\Hypertarget{task1_8cpp_aa4c8770c24ddf0bb264e7e576071c255}\index{task1.cpp@{task1.cpp}!Work\_With\_Console@{Work\_With\_Console}}
+\index{Work\_With\_Console@{Work\_With\_Console}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{Work\_With\_Console()}{Work\_With\_Console()}}
+{\footnotesize\ttfamily \label{task1_8cpp_aa4c8770c24ddf0bb264e7e576071c255} 
+void Work\+\_\+\+With\+\_\+\+Console (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{task1_8cpp_a30c361b3f607e7f140422b97e7ead155}\index{task1.cpp@{task1.cpp}!Work\_With\_File@{Work\_With\_File}}
+\index{Work\_With\_File@{Work\_With\_File}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{Work\_With\_File()}{Work\_With\_File()}}
+{\footnotesize\ttfamily \label{task1_8cpp_a30c361b3f607e7f140422b97e7ead155} 
+void Work\+\_\+\+With\+\_\+\+File (\begin{DoxyParamCaption}\item[{FILE \texorpdfstring{$\ast$}{*}}]{file}{, }\item[{FILE \texorpdfstring{$\ast$}{*}}]{result\+\_\+file}{}\end{DoxyParamCaption})}
+
+
+
+Function that open files and find solves for every string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em FILE\texorpdfstring{$\ast$}{*}} & file -\/ input file. \\
+\hline
+{\em FILE\texorpdfstring{$\ast$}{*}} & result\+\_\+file -\/ output file. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{task1_8cpp_ad71b1962511cd3e5209fce3c7d2fe82b}\index{task1.cpp@{task1.cpp}!Work\_With\_Parser@{Work\_With\_Parser}}
+\index{Work\_With\_Parser@{Work\_With\_Parser}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{Work\_With\_Parser()}{Work\_With\_Parser()}}
+{\footnotesize\ttfamily \label{task1_8cpp_ad71b1962511cd3e5209fce3c7d2fe82b} 
+void Work\+\_\+\+With\+\_\+\+Parser (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Function that parse input string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & argc -\/ ammount of arguments in input string. \\
+\hline
+{\em char\texorpdfstring{$\ast$}{*}} & argv\mbox{[}\mbox{]} -\/ arguments in input string. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{task1_8cpp_a1acef5cd3f2694c64b27e059a1505c44}\index{task1.cpp@{task1.cpp}!WorkWithConsole@{WorkWithConsole}}
 \index{WorkWithConsole@{WorkWithConsole}!task1.cpp@{task1.cpp}}
 \doxysubsubsection{\texorpdfstring{WorkWithConsole()}{WorkWithConsole()}}
@@ -317,19 +320,21 @@ void Work\+With\+Console (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 This function is responsible for dialogue with the user and outputting a solution. 
 
-\Hypertarget{task1_8cpp_a7b888ae90e748f9c30be78b831ee50ff}\index{task1.cpp@{task1.cpp}!WorkWithFile@{WorkWithFile}}
-\index{WorkWithFile@{WorkWithFile}!task1.cpp@{task1.cpp}}
-\doxysubsubsection{\texorpdfstring{WorkWithFile()}{WorkWithFile()}}
-{\footnotesize\ttfamily \label{task1_8cpp_a7b888ae90e748f9c30be78b831ee50ff} 
-void Work\+With\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Function that open files and find solves for every string. 
-
 
 
 \doxysubsection{Variable Documentation}
+\Hypertarget{task1_8cpp_a272bd60471e98ec90049d54c1382493b}\index{task1.cpp@{task1.cpp}!greeting\_string@{greeting\_string}}
+\index{greeting\_string@{greeting\_string}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{greeting\_string}{greeting\_string}}
+{\footnotesize\ttfamily \label{task1_8cpp_a272bd60471e98ec90049d54c1382493b} 
+const char\texorpdfstring{$\ast$}{*} greeting\+\_\+string = "{}This program finds solutions to a quadratic equation of the form ax\texorpdfstring{$^\wedge$}{\string^}2 + bx + c = 0\textbackslash{}n\+Enter coefficients a, b, c separated by spaces\textbackslash{}n"{}}
+
+\Hypertarget{task1_8cpp_a50d433015257595fb0da3ddc0a7f0c94}\index{task1.cpp@{task1.cpp}!using\_warning\_string@{using\_warning\_string}}
+\index{using\_warning\_string@{using\_warning\_string}!task1.cpp@{task1.cpp}}
+\doxysubsubsection{\texorpdfstring{using\_warning\_string}{using\_warning\_string}}
+{\footnotesize\ttfamily \label{task1_8cpp_a50d433015257595fb0da3ddc0a7f0c94} 
+const char\texorpdfstring{$\ast$}{*} using\+\_\+warning\+\_\+string = "{}Using\+: -\/t (if you want to work with console) -\/i $<$input file$>$-\/o $<$output file$>$. If you want to work with console you shouldnt write file names.\textbackslash{}n"{}}
+
 \Hypertarget{task1_8cpp_aa448f27f3adfa048dbaf51a2481a9625}\index{task1.cpp@{task1.cpp}!very\_small\_double@{very\_small\_double}}
 \index{very\_small\_double@{very\_small\_double}!task1.cpp@{task1.cpp}}
 \doxysubsubsection{\texorpdfstring{very\_small\_double}{very\_small\_double}}

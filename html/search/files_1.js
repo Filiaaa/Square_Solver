@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['task1_2ecpp_0',['task1.cpp',['../task1_8cpp.html',1,'']]]
+  ['squareequantionstructs_2eh_0',['squareEquantionStructs.h',['../square_equantion_structs_8h.html',1,'']]]
 ];

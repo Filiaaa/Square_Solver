@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['root_5f1_0',['root_1',['../struct_roots.html#a7c600f30e04915e91e26faed16ce8f5d',1,'Roots']]],
-  ['root_5f2_1',['root_2',['../struct_roots.html#a1646c93e00ef74484a244e8cd5087825',1,'Roots']]],
-  ['roots_2',['Roots',['../struct_roots.html',1,'']]],
-  ['rootsnumb_3',['RootsNumb',['../task1_8cpp.html#ac1e66156081563c054a318323814e0a0',1,'task1.cpp']]]
+  ['print_5froots_0',['Print_Roots',['../task1_8cpp.html#a5d6a0b150c2ab8e45305c787a1cc73cf',1,'task1.cpp']]],
+  ['print_5froots_5finto_5ffile_1',['Print_Roots_Into_File',['../task1_8cpp.html#a952510969c8429050dde323624a10fb2',1,'task1.cpp']]]
 ];

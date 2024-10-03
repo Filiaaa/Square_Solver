@@ -1,0 +1,38 @@
+
+void WorkWithFile(FILE* file, FILE* result_file)
+{
+
+    struct Coefs input_coefs = {NAN, NAN, NAN};
+    struct Roots result_roots = {NAN, NAN};
+    struct Roots input_roots = {NAN, NAN};
+
+    int expected_ammount_of_roots = NAN;
+
+    double expected_root1 = NAN;
+    double expected_root2 = NAN;
+
+
+    while(ScanFile(&input_coefs, &expected_ammount_of_roots, &input_roots, file, result_file))
+    {
+        RootsNumb roots_cnt = FindRoots(input_coefs, &result_roots);
+        PrintRootsIntoFile(result_roots, roots_cnt, expected_ammount_of_roots, input_roots, result_file);
+    }
+}
+
+
+
+
+
+void WorkWithConsole()
+{
+    printf("%s", greeting_string);
+
+    struct Coefs input_coefs;
+    struct Roots result_roots;
+
+    ScanInp(&input_coefs);
+
+    RootsNumb roots_cnt = FindRoots(input_coefs, &result_roots);
+    PrintRoots(result_roots, roots_cnt);
+
+}

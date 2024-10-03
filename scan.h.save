@@ -1,0 +1,58 @@
+/**
+ * @brief Function that scans input
+ */
+/**
+ * @param double* coef_a pointer to coef_a(coef before x²).
+ * @param double* coef_b pointer to coef_b(coef before x).
+ * @param double* coef_c pointer to coef_c(free coef).
+ */
+void Scan_Inp(struct Coefs* input_coefs); /**
+ * @brief Function that scans input file
+ */
+/**
+ * @param struct Coefs* input_coefs - coefs from input.
+ * @param int* expected_ammount_of_roots - ammount of roots in answer.
+ * @param struct Roots* input_roots - roots in answer.
+ * @param FILE* file - input file.
+ * @param FILE* result_file - output file.
+ * @return int - 0 if there are no strings after this input. 1 if there are strings after this input.
+ */
+int Scan_File(struct Coefs* input_coefs, int* expected_ammount_of_roots, struct Roots* input_roots,  FILE* file, FILE* result_file);
+  /**
+ * @brief Function that parse input string
+ */
+  /**
+ * @param int argc - ammount of arguments in input string.
+ * @param char* argv[] - arguments in input string.
+ */
+void Parsing(int argc, char* argv[]);
+
+void Scan_Inp(struct Coefs* input_coefs)
+{
+    int inp = 0;
+
+    while(scanf("%lg%lg%lg", &input_coefs->coef_a, &input_coefs->coef_b, &input_coefs->coef_c) != 3 && (inp = getchar()) != EOF)
+    {
+        printf("Bro, you entered bullshit. Try again\n");
+
+        while(inp != '\n')
+        {
+            inp = getchar();
+        }
+    }
+}
+
+int Scan_File(struct Coefs* input_coefs, int* expected_ammount_of_roots, struct Roots* input_roots,  FILE* file, FILE* result_file)
+{
+    int inp = 0;
+
+    if(fscanf(file, "%lg%lg%lg%d%lg%lg", &input_coefs->coef_a, &input_coefs->coef_b, &input_coefs->coef_c, expected_ammount_of_roots, &input_roots->root_1, &input_roots->root_2) == 6)
+    {
+        fprintf(result_file, "%lg %lg %lg ", input_coefs->coef_a, input_coefs->coef_b, input_coefs->coef_c);
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}

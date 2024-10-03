@@ -1,0 +1,94 @@
+\doxysection{parsing\+\_\+analize.\+c}
+\hypertarget{parsing__analize_8c_source}{}\label{parsing__analize_8c_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}work.c"{}}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}parsing.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ using\_warning\_string\ =\ \textcolor{stringliteral}{"{}Using:\ -\/t\ (if\ you\ want\ to\ work\ with\ console)\ -\/i\ <input\ file>-\/o\ <output\ file>.\ If\ you\ want\ to\ work\ with\ console\ you\ shouldnt\ write\ file\ names.\(\backslash\)n"{}};}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keywordtype}{void}\ Flag1Func(\mbox{\hyperlink{struct_flag}{Flag}}\ *flag,\ \mbox{\hyperlink{struct_parser}{Parser}}\ *parser)}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ parser-\/>work\_with\_console\ =\ 1;}
+\DoxyCodeLine{00010\ \}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keywordtype}{void}\ Flag2Func(\mbox{\hyperlink{struct_flag}{Flag}}\ *flag,\ \mbox{\hyperlink{struct_parser}{Parser}}\ *parser)}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ parser\ -\/>\ file\ =\ fopen(flag-\/>argument,\ \textcolor{stringliteral}{"{}r"{}});}
+\DoxyCodeLine{00016\ \}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keywordtype}{void}\ Flag3Func(\mbox{\hyperlink{struct_flag}{Flag}}\ *flag,\ \mbox{\hyperlink{struct_parser}{Parser}}\ *parser)}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ parser\ -\/>\ result\_file\ =\ fopen(flag-\/>argument,\ \textcolor{stringliteral}{"{}w"{}});}
+\DoxyCodeLine{00021\ \}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keywordtype}{void}\ AnalyzeParser(\mbox{\hyperlink{struct_parser}{Parser}}\ parser)}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordflow}{if}((parser.file\ !=\ NULL\ ||\ parser.result\_file\ !=\ NULL)\ \&\&\ parser.work\_with\_console\ ==\ 1)}
+\DoxyCodeLine{00026\ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\%s"{}},\ using\_warning\_string);}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordflow}{if}(parser.work\_with\_console\ ==\ 1)}
+\DoxyCodeLine{00033\ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ WorkWithConsole();}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordflow}{if}(parser.file\ ==\ NULL\ ||\ parser.result\_file\ ==\ NULL)}
+\DoxyCodeLine{00039\ \ \ \ \ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\%s"{}},\ using\_warning\_string);}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+\DoxyCodeLine{00043\ \ \ \ \ WorkWithFile(parser.file,\ parser.result\_file);}
+\DoxyCodeLine{00044\ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{void}\ Parsing(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}*\ argv[])}
+\DoxyCodeLine{00047\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordflow}{if}(argc\ ==\ 1)}
+\DoxyCodeLine{00049\ \ \ \ \ \{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ WorkWithConsole();}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00052\ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{struct_parser}{Parser}}\ parser;}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{struct_flag}{Flag}}\ flag1\ =\ \{\textcolor{stringliteral}{"{}-\/c"{}},\ \textcolor{stringliteral}{"{}-\/console"{}},\ 0,\ NULL,\ Flag1Func\};}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{struct_flag}{Flag}}\ flag2\ =\ \{\textcolor{stringliteral}{"{}-\/i"{}},\ \textcolor{stringliteral}{"{}-\/input"{}},\ 1,\ NULL,\ Flag2Func\};}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{struct_flag}{Flag}}\ flag3\ =\ \{\textcolor{stringliteral}{"{}-\/o"{}},\ \textcolor{stringliteral}{"{}-\/output"{}},\ 1,\ NULL,\ Flag3Func\};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{struct_flag}{Flag}}\ flags[3]\ =\ \{flag1,\ flag2,\ flag3\};}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ flags\_numb\ =\ 3;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 1;\ i\ <\ argc;\ i+=2)}
+\DoxyCodeLine{00063\ \ \ \ \ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ has\_flag\ =\ 0;}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ j\ =\ 0;\ j\ <\ flags\_numb;\ j++)}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(strcmp(argv[i],\ flags[j].short\_version)\ ==\ 0\ ||\ strcmp(argv[i],\ flags[j].long\_version)\ ==\ 0)}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(flags[j].arguments\_numb\ >\ 0)}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ flags[j].argument\ =\ argv[i\ +\ 1];}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ i\ -\/=\ 1;}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ flags[j].function(\&flags[j],\ \&parser);}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ has\_flag\ =\ 1;}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(has\_flag\ ==\ 0)}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00086\ \ \ \ \ \}}
+\DoxyCodeLine{00087\ \ \ \ \ AnalyzeParser(parser);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \}}
+
+\end{DoxyCode}

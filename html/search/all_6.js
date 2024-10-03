@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['printroots_0',['PrintRoots',['../task1_8cpp.html#aa315ae422daf596502f6eb1d4dcfa507',1,'task1.cpp']]],
-  ['printrootsintofile_1',['PrintRootsIntoFile',['../task1_8cpp.html#a4abeb90404b1bbe040ccc46655c67c2f',1,'task1.cpp']]]
+  ['one_0',['ONE',['../square_equantion_structs_8h.html#ac1e66156081563c054a318323814e0a0a7a725f13af144bdef532d0389ba75e0d',1,'squareEquantionStructs.h']]]
 ];
